@@ -39,18 +39,18 @@ const Banner = () => {
       <section>
         <div>
           <div
-            className="bg-center bg-no-repeat w-auto opacity-[1] pt-[90px]"
+            className="bg-center bg-no-repeat w-auto opacity-[1] pt-[90px] h-[calc(100vh-100px)] large:h-[calc(100vh-70px)]"
             style={{
               backgroundImage: `linear-gradient(rgb(0 0 0 / 66%),rgb(0 0 0 / 59%)),url(${sliderData[currentSlide].image})`,
               backgroundSize: "100% 100%",
-              height: " calc(100vh - 100px)",
+             
             }}
           >
-            <div className=" flex-col flex-center">
+            <div className=" flex-col flex-center large:mt-[60px]">
               <h2 className="text-white text-[17px] medium:text-[20px]">
                 Take a Glimpse Into The Beautiful Country Of:
               </h2>
-              <h1 className="text-white text-[38px] font-bold mb-[18px] medium:text-[50px]">
+              <h1 className="text-white text-[38px] font-bold mb-[18px] medium:text-[50px] ">
                 {sliderData[currentSlide].countryName}
               </h1>
               <div>
@@ -62,10 +62,10 @@ const Banner = () => {
                 </a>
               </div>
             </div>
-            <div className=" my-[30px] px-[15px] medium:px-[80px]">
+            <div className=" my-[30px] px-[15px] medium:px-[80px] min-[992px]:my-[55px]">
               <div className="bg-white rounded-[23px] px-[30px] py-[30px] medium:rounded-[60px]">
                 <div className="flex flex-wrap">
-                  <div className="w-1/2 flex items-center mb-[22px] px-[6px] medium:mb-[15px]">
+                  <div className="w-1/2 flex items-center mb-[22px] px-[6px] medium:mb-[15px] min-[992px]:w-1/4">
                     <i className="fa-solid fa-user icon-xSmall medium:icon-medium"></i>
                     <div className="flex flex-col gap-y-2">
                       <span className="icon-header">
@@ -76,7 +76,7 @@ const Banner = () => {
                       </span>
                     </div>
                   </div>
-                  <div className="w-1/2 flex items-center mb-[22px] px-[6px] medium:mb-[15px]">
+                  <div className="w-1/2 flex items-center mb-[22px] px-[6px] medium:mb-[15px] min-[992px]:w-1/4">
                     <i className="fa-solid fa-globe icon-xSmall medium:icon-medium"></i>
                     <div className="flex flex-col gap-y-2">
                       <span className="icon-header">
@@ -87,7 +87,7 @@ const Banner = () => {
                       </span>
                     </div>
                   </div>
-                  <div className="w-1/2 flex items-center mb-[22px] px-[6px] medium:mb-[15px]">
+                  <div className="w-1/2 flex items-center mb-[22px] px-[6px] medium:mb-[15px] min-[992px]:w-1/4">
                     <i className="fa-solid fa-house icon-xSmall medium:icon-medium"></i>
                     <div className="flex flex-col gap-y-2">
                       <span className="icon-header">
@@ -98,7 +98,7 @@ const Banner = () => {
                       </span>
                     </div>
                   </div>
-                  <div className="w-1/2 flex items-center mb-[22px] px-[6px]">
+                  <div className="w-1/2 flex items-center mb-[22px] px-[6px] min-[992px]:w-1/4 large:mb-0">
                     <div>
                       <a
                         href="#"
@@ -112,9 +112,9 @@ const Banner = () => {
               </div>
             </div>
             <nav className="flex justify-center items-center">
-              <div className="flex-center text-center w-[70%]">
+              <div className="flex-center text-center w-[70%] ">
                 {sliderData.map((slide, slideIndex) => (
-                  <div className="flex flex-col gap-[14px] w-[5%] mx-[16px] medium:w-[15%] ">
+                  <div className="flex flex-col gap-[14px] w-[5%] mx-[16px] medium:w-[15%] large:w-[19.5%] ">
                     <ProgressBar />
                     <span
                       key={slideIndex}
