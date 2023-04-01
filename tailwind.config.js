@@ -7,6 +7,7 @@ module.exports = {
         small: "576px",
         medium: "767px",
         large: "993px",
+        xLarge: "1200px",
       },
       colors: {
         "teal-color": "#22b3c1",

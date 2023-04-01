@@ -9,7 +9,7 @@ const Header = () => {
   };
   return (
     <>
-      <header className="flex justify-between items-center h-[100px] bg-teal-color px-[30px] large:h-[70px] large:px-[54px]">
+      <header className="flex justify-between items-center h-[100px] bg-teal-color px-[30px] large:h-[70px] large:px-[160px]">
         <img src={logo} alt="logo" />
         <div
           className="w-8 h-8 flex flex-col justify-around large:hidden "
@@ -25,19 +25,19 @@ const Header = () => {
               : "w-full bg-white flex flex-col fixed top-[100px] right-0 text-center large:mr-[22px]"
           }
         >
-          <a href="#" className="border-b text-5 py-4 large:w-[120px] large:px-5 large:border-none large:text-4 large:text-white">
+          <a href="#" className="border-b text-5 py-4 large:w-[100px] large:px-5 large:border-none large:text-4 large:text-white">
             Home
           </a>
 
-          <a href="#" className="border-b text-5 py-4 large:w-[120px] large:px-5 large:border-none large:text-4 large:text-white">
+          <a href="#" className="border-b text-5 py-4 large:w-[100px] large:px-5 large:border-none large:text-4 large:text-white">
             About
           </a>
  
-          <a href="#" className="border-b text-5 py-4 large:w-[120px] large:px-5 large:border-none large:text-4 large:text-white">
+          <a href="#" className="border-b text-5 py-4 large:w-[100px] large:px-5 large:border-none large:text-4 large:text-white">
             Deal
           </a>
 
-          <a href="#" className="border-b text-5 py-4 large:w-[120px] large:px-5 large:border-none large:text-4 large:text-white">
+          <a href="#" className="border-b text-5 py-4 large:w-[100px] large:px-5 large:border-none large:text-4 large:text-white">
             Reservation
           </a>
         </nav>
