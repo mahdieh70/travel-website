@@ -1,5 +1,38 @@
-export const countriesData=[
-    {
-        image:
-    }
-]
+export const countriesData = [
+  {
+    id: 1,
+    image: "https://i.postimg.cc/jSRPhnXN/veresk-bridge.jpg",
+    country: "IRAN",
+    continent: "Asia",
+    population: 84.55,
+    territory: 1_648_195,
+    avgPrice: 15.87,
+  },
+  {
+    id: 2,
+    image: "https://i.postimg.cc/85pYQCNr/5-5.jpg",
+    country: "ITALY",
+    continent: "Europe",
+    population: 60.219,
+    territory: 25.832,
+    avgPrice: 180.45,
+  },
+  {
+    id: 3,
+    image: "https://i.postimg.cc/NFWbMGqD/Montjuic-Park.jpg",
+    country: "SPAIN",
+    continent: "Europe",
+    population: 47.325,
+    territory: 505.99,
+    avgPrice: 366.0,
+  },
+  {
+    id: 4,
+    image: "https://i.postimg.cc/9QP1mjxP/hamamono-ankara.jpg",
+    country: "TURKEY",
+    continent: "Asia",
+    population: 84.78,
+    territory: 783.356,
+    avgPrice: 87.736,
+  },
+];

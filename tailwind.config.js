@@ -14,7 +14,7 @@ module.exports = {
         gray: "#afafaf",
       },
       backgroundImage: {
-        iranBanner: "url('https://postimg.cc/F7TFBT2N')",
+        callToReserveImage: "url('https://i.postimg.cc/T37jySFh/cta-bg.jpg')",
       },
     },
   },
