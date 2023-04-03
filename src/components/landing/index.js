@@ -1,4 +1,6 @@
 import React from "react";
+
+//components
 import Header from "../header";
 import Banner from "../banner";
 import VisitCountry from "../visitCountry";

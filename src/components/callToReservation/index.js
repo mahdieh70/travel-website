@@ -3,7 +3,7 @@ import React from "react";
 const CallToReservation = () => {
   return (
     <>
-      <section className="bg-callToReserveImage bg-center bg-cover bg-no-repeat h-[365px] py-[75px]">
+      <section className="bg-callToReserveImage bg-center bg-cover bg-no-repeat py-[75px]">
         <div className="px-[10px]">
           <div className="text-center">
             <div>

@@ -1,7 +1,7 @@
 export const countriesData = [
   {
     id: 1,
-    image: "https://i.postimg.cc/jSRPhnXN/veresk-bridge.jpg",
+    image: "https://i.postimg.cc/V6W4yqVY/veresk-bridge.jpg",
     country: "IRAN",
     continent: "Asia",
     population: 84.55,
