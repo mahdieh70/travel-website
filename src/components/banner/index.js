@@ -1,6 +1,7 @@
 import React, { useState, useRef, useEffect } from "react";
 import { sliderData } from "./slider-data";
 import ProgressBar from "../progressBar";
+import { Link } from "react-router-dom";
 
 const delay = 6000;
 
@@ -54,12 +55,12 @@ const Banner = () => {
                   {sliderData[currentSlide].countryName}
                 </h1>
                 <div>
-                  <a
-                    href="#"
+                  <Link
+                    to="iran"
                     className="text-teal-color border border-solid border-teal-color button no-underline"
                   >
                     Go There
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
