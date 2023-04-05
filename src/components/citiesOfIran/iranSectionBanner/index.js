@@ -1,9 +1,9 @@
 import React from "react";
 
-const AboutSectionBanner = () => {
+const IranSectionBanner = () => {
   return (
     <>
-      <section className="mt-[100px] large:mt-[70px]">
+      <section className="mt-[70px] large:mt-[70px]">
         <div className="bg-center bg-[url('https://i.postimg.cc/DfHBbVg8/banner.jpg')] bg-no-repeat bg-cover bg-fixed py-[130px] w-full ">
           <div className="mx-3">
             <div>
@@ -41,4 +41,4 @@ const AboutSectionBanner = () => {
   );
 };
 
-export default AboutSectionBanner;
+export default IranSectionBanner;

@@ -37,7 +37,7 @@ const Banner = () => {
 
   return (
     <>
-      <section className="mt-[100px] large:mt-[70px]">
+      <section className="mt-[70px] large:mt-[70px]">
         <div>
           <div
             className="bg-center bg-no-repeat w-full h-[calc(100vh-100px)]  large:h-[calc(100vh-70px)]"
@@ -56,7 +56,7 @@ const Banner = () => {
                 </h1>
                 <div>
                   <Link
-                    to="iran"
+                    to={sliderData[currentSlide].countryName}
                     className="text-teal-color border border-solid border-teal-color button no-underline"
                   >
                     Go There
