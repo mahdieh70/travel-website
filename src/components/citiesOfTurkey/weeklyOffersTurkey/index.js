@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect } from "react";
-import { TurkeyOffersSlider } from "../../offerSliders/offersSlider";
+import { TurkeyOffersSlider } from "../../sliders/offerSliders/offersSlider";
 
 const delay = 6000;
 

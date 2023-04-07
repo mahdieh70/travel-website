@@ -1,5 +1,3 @@
-
-
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ["./src/**/*.{html,js}"],
@@ -10,6 +8,7 @@ module.exports = {
         medium: "767px",
         large: "993px",
         xLarge: "1100px",
+        xxLarge: "1400px",
       },
       colors: {
         "teal-color": "#22b3c1",

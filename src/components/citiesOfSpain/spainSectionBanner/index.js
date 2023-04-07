@@ -4,6 +4,7 @@ const SpainSectionBanner = () => {
   return (
     <>
       <section className="mt-[70px] large:mt-[70px]">
+       
         <div className="bg-center bg-[url('https://i.postimg.cc/nhj0tY6F/5-plaza-mayor.jpg')] bg-no-repeat bg-cover bg-fixed py-[130px] w-full ">
           <div className="mx-3">
             <div>
@@ -12,10 +13,7 @@ const SpainSectionBanner = () => {
                   className="w-full h-full bg-center bg-[url('https://i.postimg.cc/nhj0tY6F/5-plaza-mayor.jpg')] bg-no-repeat bg-fixed bg-cover absolute left-0 top-0 z-[1]"
                   style={{ filter: "blur(8px) brightness(80%)" }}
                 ></div>
-                <h4 className="z-[2] relative text-[20px] font-normal">
-                  EXPLORE OUR COUNTRY
-                </h4>
-                <div className="z-[2] relative w-[100px] h-[2px] bg-[#f8f1f14d] my-5 mx-auto"></div>
+               
                 <h2 className="z-[2] relative text-[50px] mb-[25px]">
                   Welcome To Spain
                 </h2>

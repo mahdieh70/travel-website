@@ -1,14 +1,20 @@
 import React from "react";
-import AboutSectionBanner from "./iranSectionBanner";
-import CitiesAndTwons from "../citiesAndTowns";
+import IranSectionBanner from "../citiesOfIran/iranSectionBanner/index";
+import CitiesAndTownOfIran from "../citiesOfIran/citiesAndTownOfIran/index";
 import WeeklyOffersIran from "./weeklyOffersIran";
+import CallToReservation from "../callToReservation/index";
+import Footer from "../footer/index";
+import DiscoverMoreAbout from "../DiscoverMoreAbout";
 
 const CitiesOfIran = () => {
   return (
     <>
-      <AboutSectionBanner />
-      <CitiesAndTwons />
+      <IranSectionBanner />
+      <CitiesAndTownOfIran />
       <WeeklyOffersIran />
+      <DiscoverMoreAbout/>
+      <CallToReservation />
+      <Footer />
     </>
   );
 };

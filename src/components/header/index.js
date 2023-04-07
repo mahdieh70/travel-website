@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 
 //logo
-import logo from "../../assets/logo/logo.png";
+import logo from "../../assets/logo/logoipsum-2.svg";
 
 //components
 import HamburgerMenu from "./hamburgerMenu";
@@ -17,6 +17,7 @@ const Header = () => {
     <>
       <header className="flex justify-between z-50 fixed top-0 right-0 w-full items-center h-[70px] bg-teal-color px-[30px] shadow-md large:h-[70px] large:px-[160px] xLarge:px-[50px]">
         <img src={logo} alt="logo" />
+
         <div
           className="w-8 h-8 flex flex-col justify-around large:hidden "
           onClick={toggleHamburger}

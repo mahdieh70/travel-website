@@ -5,7 +5,7 @@ const IranSectionBanner = () => {
     <>
       <section className="mt-[70px] large:mt-[70px]">
         <div className="bg-center bg-[url('https://i.postimg.cc/DfHBbVg8/banner.jpg')] bg-no-repeat bg-cover bg-fixed py-[130px] w-full ">
-          <div className="mx-3">
+          <div className="mx-auto px-[10px]  max-w-[540px] medium:max-w-[720px] large:max-w-[960px] xLarge:max-w-[1140px] xxLarge:max-w-[1320px]">
             <div>
               <div className="text-white rounded-[23px] text-center py-30 px-15 relative overflow-hidden z-[2] py-[120px] px-[60px]">
                 <div
@@ -19,7 +19,7 @@ const IranSectionBanner = () => {
                 <h2 className="z-[2] relative text-[50px] mb-[25px]">
                   Welcome To Iran
                 </h2>
-                <p className="z-[2] relative px-[5%] text-[15px] leading-[30px]">
+                <p className="z-[2] relative px-[5%] text-[15px] leading-[30px] large:px-[15%]">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                   do eiusmod tempor incididunt uttersi labore et dolore magna
                   aliqua is ipsum suspendisse ultrices gravida
@@ -27,7 +27,7 @@ const IranSectionBanner = () => {
                 <div className="z-[2] relative mt-[30px]">
                   <a
                     href="#"
-                    className="bg-white text-teal-color text-center text-[14px] py-4 px-[30px] rounded-[25px] overflow-hidden inline-block no-underline"
+                    className="bg-white text-teal-color text-center text-[14px] py-4 px-[30px] rounded-[25px] tracking-[0.5px] overflow-hidden inline-block no-underline"
                   >
                     Discover More
                   </a>

@@ -12,10 +12,7 @@ const TurkeySectionBanner = () => {
                   className="w-full h-full bg-center bg-[url('https://i.postimg.cc/ZqqfMz4Q/topkapi-palace.jpg')] bg-no-repeat bg-fixed bg-cover absolute left-0 top-0 z-[1]"
                   style={{ filter: "blur(8px) brightness(80%)" }}
                 ></div>
-                <h4 className="z-[2] relative text-[20px] font-normal">
-                  EXPLORE OUR COUNTRY
-                </h4>
-                <div className="z-[2] relative w-[100px] h-[2px] bg-[#f8f1f14d] my-5 mx-auto"></div>
+               
                 <h2 className="z-[2] relative text-[50px] mb-[25px]">
                   Welcome To Turkey
                 </h2>

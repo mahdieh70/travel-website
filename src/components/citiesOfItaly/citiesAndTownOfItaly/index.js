@@ -1,10 +1,8 @@
 import React, { useEffect, useState, useRef } from "react";
-
-import { citiesSliderData } from "./citiesSliderData";
+import { citiesOfItalyData } from "../../sliders/citiesAndTownSlider/index";
 
 const delay = 6000;
-
-const CitiesAndTwons = () => {
+const CitiesAndTownOfItaly = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
 
   const timeoutRef = useRef(null);
@@ -20,7 +18,7 @@ const CitiesAndTwons = () => {
     timeoutRef.current = setTimeout(
       () =>
         setCurrentSlide((prevIndex) =>
-          prevIndex === citiesSliderData.length - 1 ? 0 : prevIndex + 1
+          prevIndex === citiesOfItalyData.length - 1 ? 0 : prevIndex + 1
         ),
       delay
     );
@@ -45,11 +43,13 @@ const CitiesAndTwons = () => {
             </div>
             <div className="rounded-[10px] overflow-hidden relative">
               <img
-                src={citiesSliderData[currentSlide].image}
+                src={citiesOfItalyData[currentSlide].image}
                 alt="imag"
                 className="aspect-square w-full h-full"
               />
-              <h4 className="absolute left-[30px] bottom-[30px] text-[20px] text-white font-bold">{citiesSliderData[currentSlide].townName}</h4>
+              <h4 className="absolute left-[30px] bottom-[30px] text-[20px] text-white font-bold">
+                {citiesOfItalyData[currentSlide].townName}
+              </h4>
             </div>
           </div>
         </div>
@@ -58,4 +58,4 @@ const CitiesAndTwons = () => {
   );
 };
 
-export default CitiesAndTwons;
+export default CitiesAndTownOfItaly;
