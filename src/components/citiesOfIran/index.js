@@ -5,12 +5,13 @@ import WeeklyOffersIran from "./weeklyOffersIran";
 import CallToReservation from "../callToReservation/index";
 import Footer from "../footer/index";
 import DiscoverMoreAbout from "../DiscoverMoreAbout";
+import { citiesOfIranData } from "../sliders/citiesAndTownSlider";
 
 const CitiesOfIran = () => {
   return (
     <>
       <IranSectionBanner />
-      <CitiesAndTownOfIran />
+      <CitiesAndTownOfIran citiesOfIranData={citiesOfIranData} />
       <WeeklyOffersIran />
       <DiscoverMoreAbout/>
       <CallToReservation />

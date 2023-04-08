@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 
 import { NavLink } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 //logo
 import logo from "../../assets/logo/logoipsum-2.svg";
@@ -9,9 +10,15 @@ import logo from "../../assets/logo/logoipsum-2.svg";
 import HamburgerMenu from "./hamburgerMenu";
 
 const Header = () => {
+  const { t, i18n } = useTranslation();
   const [hamburgerOpen, setHamburgerOpen] = useState(false);
   const toggleHamburger = () => {
     setHamburgerOpen(!hamburgerOpen);
+  };
+
+  const changeLanguageHandler = (e) => {
+    const languageValue = e.target.value;
+    i18n.changeLanguage(languageValue);
   };
   return (
     <>
@@ -24,6 +31,12 @@ const Header = () => {
         >
           <HamburgerMenu isOpen={hamburgerOpen} />
         </div>
+        <div>
+            <select style={{ width: 200 }} onChange={changeLanguageHandler}>
+              <option value="en">English</option>
+              <option value="fa">فارسی</option>
+            </select>
+          </div>
 
         <nav
           className={
@@ -32,41 +45,43 @@ const Header = () => {
               : "w-full bg-white flex flex-col fixed top-[100px] right-0  text-center large:mr-[22px] z-50 shadow-md"
           }
         >
+          
           <NavLink
             to="/"
             className={({ isActive }) =>
               isActive
-                ? "text-teal-color border-t-0 border-x-0  border-solid border-[#eee] no-underline border-b text-5 py-4 large:w-[100px] large:px-5 large:border-none large:text-4 large:text-white"
-                : "text-[#1e1e1e] border-t-0 border-x-0  border-solid border-[#eee] no-underline border-b text-5 py-4 large:w-[100px] large:px-5 large:border-none large:text-4 large:text-white"
+                ? "text-teal-color border-t-0 border-x-0  border-solid border-[#eee] no-underline border-b text-5 py-4 large:w-[100px]  large:border-none large:text-4 large:text-white"
+                : "text-[#1e1e1e] border-t-0 border-x-0  border-solid border-[#eee] no-underline border-b text-5 py-4 large:w-[100px]  large:border-none large:text-4 large:text-white"
             }
           >
-            Home
+            {t('Home')}
           </NavLink>
 
           <NavLink
             to="iran"
             className={({ isActive }) =>
               isActive
-                ? "text-teal-color border-t-0 border-x-0  border-solid border-[#eee] no-underline border-b text-5 py-4 large:w-[100px] large:px-5 large:border-none large:text-4 large:text-white"
-                : "text-[#1e1e1e] border-t-0 border-x-0  border-solid border-[#eee] no-underline border-b text-5 py-4 large:w-[100px] large:px-5 large:border-none large:text-4 large:text-white"
+                ? "text-teal-color border-t-0 border-x-0  border-solid border-[#eee] no-underline border-b text-5 py-4 large:w-[100px]  large:border-none large:text-4 large:text-white"
+                : "text-[#1e1e1e] border-t-0 border-x-0  border-solid border-[#eee] no-underline border-b text-5 py-4 large:w-[100px]  large:border-none large:text-4 large:text-white"
             }
           >
-            About
+             {t('About')}
           </NavLink>
 
           <a
             href="#"
-            className="text-[#1e1e1e] border-t-0 border-x-0 border-b border-solid border-[#eee] no-underline border-b text-5 py-4 large:w-[100px] large:px-5 large:border-none large:text-4 large:text-white"
+            className="text-[#1e1e1e] border-t-0 border-x-0 border-b border-solid border-[#eee] no-underline border-b text-5 py-4 large:w-[100px]  large:border-none large:text-4 large:text-white"
           >
-            Deal
+             {t('Deal')}
           </a>
 
-          <a
-            href="#"
-            className="text-[#1e1e1e] border-t-0 border-x-0 border-b border-solid border-[#eee] no-underline border-b text-5 py-4 large:w-[100px] large:px-5 large:border-none large:text-4 large:text-white"
+          <NavLink
+            to="reservation"
+            className="text-[#1e1e1e] border-t-0 border-x-0 border-b border-solid border-[#eee] no-underline border-b text-5 py-4 large:w-[100px]  large:border-none large:text-4 large:text-white"
           >
-            Reservation
-          </a>
+            {t('Reservation')}
+          </NavLink>
+         
         </nav>
       </header>
     </>

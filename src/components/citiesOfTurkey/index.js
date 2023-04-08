@@ -5,12 +5,13 @@ import CitiesAndTownOfTurkey from "./citiesAndTownOfTurkey";
 import CallToReservation from "../callToReservation/index";
 import Footer from "../footer";
 import DiscoverMoreAbout from "../DiscoverMoreAbout";
+import { citiesOfTurkeyData } from "../sliders/citiesAndTownSlider";
 
 const CitiesOfTurkey = () => {
   return (
     <>
       <TurkeySectionBanner />
-      <CitiesAndTownOfTurkey />
+      <CitiesAndTownOfTurkey citiesOfTurkeyData={citiesOfTurkeyData}/>
       <WeeklyOffersTurkey />
       <DiscoverMoreAbout />
       <CallToReservation />

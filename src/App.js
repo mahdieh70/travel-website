@@ -8,6 +8,7 @@ import CitiesOfIran from "./components/citiesOfIran";
 import CitiesOfItaly from "./components/citiesOfItaly";
 import CitiesOfSpain from "./components/citiesOfSpain";
 import CitiesOfTurkey from "./components/citiesOfTurkey";
+import Reservation from "./components/Reservation";
 
 const App = () => {
   return (
@@ -15,6 +16,7 @@ const App = () => {
       <Header />
       <Routes>
         <Route path="/" element={<Landing />} />
+        <Route path="/reservation" element={<Reservation />} />
         <Route path="iran" element={<CitiesOfIran />} />
         <Route path="italy" element={<CitiesOfItaly />} />
         <Route path="spain" element={<CitiesOfSpain />} />

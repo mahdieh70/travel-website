@@ -1,4 +1,5 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 
 const Countries = ({
   image,
@@ -8,6 +9,7 @@ const Countries = ({
   territory,
   averagePrice,
 }) => {
+  const { t, i18n } = useTranslation();
   return (
     <>
       <div className="mb-[30px] small:flex xLarge:w-[48%] ">
@@ -32,14 +34,14 @@ const Countries = ({
                   href="#"
                   className="text-[14px] py-[14px] px-[15px] text-white bg-teal-color inline-block rounded-[25px] no-underline tracking-[1px] font-bold"
                 >
-                  Explore More
+                  {t("Explore More")}
                 </a>
               </div>
             </div>
             <p className="text-[#afafaf] my-[18px] leading-7 small:text-[16px] ">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore dolor sit amet, consectetur
-              adipiscing elit, sed do eiusmod.
+              {t(
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore dolor sit amet, consectetur adipiscing elit, sed do eiusmod."
+              )}
             </p>
             <ul className="flex list-none border-y border-x-0 border-solid border-[#eee] py-[15px] small:py-5 medium:py-3">
               <li className="w-[33.33%] text-[#afafaf] text-[14px] text-center">
