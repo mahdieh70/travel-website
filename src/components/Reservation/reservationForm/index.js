@@ -25,29 +25,29 @@ const ReservationForm = () => {
   return (
     <>
       <section className="my-[120px]">
-        <div className="px-[10px] ">
+        <div className="px-[10px] small:max-w-[540px] small:my-0 small:mx-auto medium:max-w-[720px] large:max-w-[960px] min-[1200px]:max-w-[1140px] xxLarge:max-w-[1320px] ">
           <div className="w-full max-w-full ">
             <form
               onSubmit={formik.handleSubmit}
-              className="py-[45px] px-[30px] bg-[#f9f9f9] rounded-b-3xl"
+              className="py-[45px] px-[30px] bg-[#f9f9f9] rounded-b-3xl min-[1200px]:py-[60px] min-[1200px]:px-[120px]"
             >
-              <div>
-                <div>
+              <div className="large:flex large:flex-wrap large:justify-between">
+                <div className="large:w-full" >
                   <h4 className="text-[30px] text-center mb-[50px] text-[#2a2a2a] font-bold">
                     Make Your <em className=" text-teal-color">Reservation</em>{" "}
                     Through This <em className=" text-teal-color">Form</em>
                   </h4>
                 </div>
-                <div>
+                <div className="large:w-[49%]">
                   <fieldset className="border-0 outline-0 mb-[20px]">
                     <label
                       htmlFor="fullName"
-                      className="text-[15px] text-[#afafaf] inline-block mb-2 capitalize"
+                      className="text-[15px] text-[#afafaf] inline-block mb-2 capitalize large:mb-0"
                     >
                       your name
                     </label>
                     <input
-                      className="w-full h-[46px] bg-transparent rounded-[23px] border border-solid border-[#e0e0e0] px-5 cursor-pointer mb-2 "
+                      className="w-full h-[46px] bg-transparent rounded-[23px] border border-solid border-[#e0e0e0] px-5 cursor-pointer mb-2 large:mt-2 "
                       name="fullName"
                       type="text"
                       {...formik.getFieldProps("fullName")}
@@ -59,16 +59,16 @@ const ReservationForm = () => {
                     ) : null}
                   </fieldset>
                 </div>
-                <div>
+                <div className="large:w-[49%]">
                   <fieldset className="border-0 outline-0 mb-[20px]">
                     <label
                       htmlFor="phone"
-                      className="text-[15px] text-[#afafaf] inline-block mb-2 capitalize"
+                      className="text-[15px] text-[#afafaf] inline-block mb-2 capitalize large:mb-0"
                     >
                       your phone number
                     </label>
                     <input
-                      className="w-full h-[46px] bg-transparent rounded-[23px] border border-solid border-[#e0e0e0] px-5 cursor-pointer mt-2"
+                      className="w-full h-[46px] bg-transparent rounded-[23px] border border-solid border-[#e0e0e0] px-5 cursor-pointer mt-2 large:mb-0 large:mt-2"
                       name="phone"
                       type="number"
                       {...formik.getFieldProps("phone")}
@@ -80,7 +80,7 @@ const ReservationForm = () => {
                     ) : null}
                   </fieldset>
                 </div>
-                <div>
+                <div className="large:w-[49%]">
                   <fieldset className="border-0 outline-0">
                     <label
                       htmlFor="guests"
@@ -88,7 +88,7 @@ const ReservationForm = () => {
                     >
                       number of guests
                     </label>
-                    <select className="w-full h-[46px] bg-transparent rounded-[23px] border border-solid border-[#e0e0e0] px-5 cursor-pointer mb-[30px] block text-[1rem] leading-[1.5] text-[#212529]">
+                    <select className="w-full h-[46px] bg-transparent rounded-[23px] border border-solid border-[#e0e0e0] px-5 cursor-pointer mb-[30px] block text-[1rem] leading-[1.5] text-[#212529] large:mt-2">
                       <option selected>3 or 4 0r 5</option>
                       <option>1</option>
                       <option>2</option>
@@ -97,7 +97,7 @@ const ReservationForm = () => {
                     </select>
                   </fieldset>
                 </div>
-                <div>
+                <div className="large:w-[49%]">
                   <fieldset className="border-0 outline-0 mb-[20px]">
                     <label
                       htmlFor="date"
@@ -106,7 +106,7 @@ const ReservationForm = () => {
                       check in date
                     </label>
                     <input
-                      className="w-full h-[46px] bg-transparent rounded-[23px] border border-solid border-[#e0e0e0] px-5 cursor-pointer mt-2"
+                      className="w-full h-[46px] text-[#aaa] bg-transparent rounded-[23px] border border-solid border-[#e0e0e0] px-5 cursor-pointer mt-2 small:text-[16px]"
                       name="date"
                       type="date"
                       {...formik.getFieldProps("date")}
@@ -118,7 +118,7 @@ const ReservationForm = () => {
                     ) : null}
                   </fieldset>
                 </div>
-                <div>
+                <div className="large:w-full">
                   {" "}
                   <fieldset className="border-0 outline-0">
                     <label
@@ -127,7 +127,7 @@ const ReservationForm = () => {
                     >
                       choose your destination
                     </label>
-                    <select className="w-full h-[46px] bg-transparent rounded-[23px] border border-solid border-[#e0e0e0] px-5 cursor-pointer mb-[30px] block text-[1rem] leading-[1.5] text-[#212529]">
+                    <select className="w-full h-[46px] bg-transparent rounded-[23px] border border-solid border-[#e0e0e0] px-5 cursor-pointer mb-[30px] block text-[1rem] leading-[1.5] text-[#212529] large:mt-2">
                       <option selected>Iran, Mazandaran</option>
                       <option>Iran, Shiraz</option>
                       <option>Iran, Isfahan</option>
@@ -145,7 +145,7 @@ const ReservationForm = () => {
                     </select>
                   </fieldset>
                 </div>
-                <div>
+                <div className="large:w-full">
                   <fieldset className="border-0">
                     <button
                       type="submit"

@@ -31,12 +31,7 @@ const Header = () => {
         >
           <HamburgerMenu isOpen={hamburgerOpen} />
         </div>
-        <div>
-            <select style={{ width: 200 }} onChange={changeLanguageHandler}>
-              <option value="en">English</option>
-              <option value="fa">فارسی</option>
-            </select>
-          </div>
+      
 
         <nav
           className={
@@ -45,13 +40,14 @@ const Header = () => {
               : "w-full bg-white flex flex-col fixed top-[100px] right-0  text-center large:mr-[22px] z-50 shadow-md"
           }
         >
+           
           
           <NavLink
             to="/"
             className={({ isActive }) =>
               isActive
-                ? "text-teal-color border-t-0 border-x-0  border-solid border-[#eee] no-underline border-b text-5 py-4 large:w-[100px]  large:border-none large:text-4 large:text-white"
-                : "text-[#1e1e1e] border-t-0 border-x-0  border-solid border-[#eee] no-underline border-b text-5 py-4 large:w-[100px]  large:border-none large:text-4 large:text-white"
+                ? "text-teal-color border-t-0 border-x-0  border-solid border-[#eee] no-underline border-b text-5 py-4 mx-[10px] large:w-[100px]  large:border-none large:text-4 large:text-white"
+                : "text-[#1e1e1e] border-t-0 border-x-0  border-solid border-[#eee] no-underline border-b text-5 py-4 mx-[10px] large:w-[100px]  large:border-none large:text-4 large:text-white"
             }
           >
             {t('Home')}
@@ -61,8 +57,8 @@ const Header = () => {
             to="iran"
             className={({ isActive }) =>
               isActive
-                ? "text-teal-color border-t-0 border-x-0  border-solid border-[#eee] no-underline border-b text-5 py-4 large:w-[100px]  large:border-none large:text-4 large:text-white"
-                : "text-[#1e1e1e] border-t-0 border-x-0  border-solid border-[#eee] no-underline border-b text-5 py-4 large:w-[100px]  large:border-none large:text-4 large:text-white"
+                ? "text-teal-color border-t-0 border-x-0  border-solid border-[#eee] no-underline border-b text-5 py-4 mx-[10px] large:w-[100px]  large:border-none large:text-4 large:text-white"
+                : "text-[#1e1e1e] border-t-0 border-x-0  border-solid border-[#eee] no-underline border-b text-5 py-4 mx-[10px] large:w-[100px]  large:border-none large:text-4 large:text-white"
             }
           >
              {t('About')}
@@ -70,17 +66,23 @@ const Header = () => {
 
           <a
             href="#"
-            className="text-[#1e1e1e] border-t-0 border-x-0 border-b border-solid border-[#eee] no-underline border-b text-5 py-4 large:w-[100px]  large:border-none large:text-4 large:text-white"
+            className="text-[#1e1e1e] border-t-0 border-x-0 border-b border-solid border-[#eee] no-underline border-b text-5 py-4 mx-[10px] large:w-[100px]  large:border-none large:text-4 large:text-white"
           >
              {t('Deal')}
           </a>
 
           <NavLink
             to="reservation"
-            className="text-[#1e1e1e] border-t-0 border-x-0 border-b border-solid border-[#eee] no-underline border-b text-5 py-4 large:w-[100px]  large:border-none large:text-4 large:text-white"
+            className="text-[#1e1e1e] border-t-0 border-x-0 border-b border-solid border-[#eee] no-underline text-5 py-4 mx-[10px] large:w-[100px]  large:border-none large:text-4 large:text-white"
           >
             {t('Reservation')}
           </NavLink>
+          <div className="flex items-center w-[100px] mx-[10px]">
+            <select style={{ width: 200 }} onChange={changeLanguageHandler}>
+              <option value="en">English</option>
+              <option value="fa">فارسی</option>
+            </select>
+          </div>
          
         </nav>
       </header>
