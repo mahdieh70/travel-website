@@ -54,7 +54,7 @@ const Banner = () => {
                 {t('Take a Glimpse Into The Beautiful Country Of')}
                 </h2>
                 <h1 className="text-white text-[38px] font-bold my-[18px] medium:text-[50px] ">
-                  {sliderData[currentSlide].countryName}
+                {t(`${sliderData[currentSlide].countryName}`)}
                 </h1>
                 <div>
                   <Link

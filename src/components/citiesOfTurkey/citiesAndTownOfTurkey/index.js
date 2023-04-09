@@ -29,7 +29,7 @@
 
 //   return (
 //     <>
-//       <section className="bg-white relative mt-[-70px] py-[50px] px-[50px] rounded-[23px] shadow-md mx-auto small:max-w-[540px] medium:max-w-[720px] ">
+//       <section className="bg-white relative mt-[-70px] py-[50px] px-[50px] rounded-[23px] shadow-md mx-auto small:max-w-[540px] medium:max-w-[720px]  ">
 //         <div className="flex flex-wrap">
 //           <div className="mx-3">
 //             <div className="flex flex-col w-full ">
@@ -88,6 +88,10 @@
 
 // export default CitiesAndTownOfIran;
 
+
+
+// second way
+
 // import React, { useEffect, useState, useRef } from "react";
 
 // import { citiesOfIranData } from "../../sliders/citiesAndTownSlider/index";
@@ -125,7 +129,7 @@
 //   };
 //   return (
 //     <>
-//       <section className="bg-white relative mt-[-70px] py-[50px] px-[50px] rounded-[23px] shadow-md">
+//       <section className="bg-white relative mt-[-70px] py-[50px] px-[50px] rounded-[23px] shadow-md small:max-w-[540px] small:mx-auto medium:max-w-[720px] large:max-w-[960px]">
 //         <div className="mx-3">
 //           <div className="flex flex-col w-full ">
 //             <div className="text-center ">
@@ -155,6 +159,11 @@
 
 // export default CitiesAndTownOfIran;
 
+
+
+
+// third way
+
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Scrollbar, A11y, Autoplay } from "swiper";
 
@@ -174,7 +183,7 @@ const CitiesAndTownOfIran = ({ citiesOfTurkeyData }) => {
           <div className="flex flex-col w-full ">
             <div className="text-center ">
               <h2 className="text-[30px] mb-[30px] text-[#2a2a2a]">
-                Iran's <span className="text-teal-color">Cities & Towns</span>
+               <span className="text-teal-color">Cities & Towns</span> Of Turkey
               </h2>
             </div>
 
