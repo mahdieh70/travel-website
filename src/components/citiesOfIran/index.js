@@ -6,14 +6,15 @@ import CallToReservation from "../callToReservation/index";
 import Footer from "../footer/index";
 import DiscoverMoreAbout from "../DiscoverMoreAbout";
 import { citiesOfIranData } from "../sliders/citiesAndTownSlider";
+import { iranOffersSlider } from "../sliders/offerSliders/offersSlider";
 
 const CitiesOfIran = () => {
   return (
     <>
       <IranSectionBanner />
       <CitiesAndTownOfIran citiesOfIranData={citiesOfIranData} />
-      <WeeklyOffersIran />
-      <DiscoverMoreAbout/>
+      <WeeklyOffersIran iranOffersSlider={iranOffersSlider} />
+      <DiscoverMoreAbout />
       <CallToReservation />
       <Footer />
     </>

@@ -5,15 +5,15 @@ const DiscoverMoreAbout = () => {
   return (
     <>
       <section className="mt-[120px] pb-[120px] border-b border-t-0 border-x-0 border-solid border-[#eee]">
-        <div className="px-[10px]">
-          <div>
-            <div>
+        <div className="px-[10px] small:max-w-[540px] small:my-0 small:mx-auto medium:max-w-[720px] large:max-w-[960px] min-[1200px]:max-w-[1140px] xxLarge:max-w-[1320px]">
+          <div className="large:flex large:flex-wrap">
+            <div className="small:self-center large:w-1/2">
               <div className="mb-[60px]">
                 <img src={discoverMore} alt="discover" className="w-full" />
               </div>
             </div>
 
-            <div>
+            <div className="large:w-1/2">
               <div className="mb-10 ">
                 <h2 className="text-[30px] leading-[36px] mb-[20px] font-bold text-[#2a2a2a]">
                   Discover More About Our Country
@@ -23,8 +23,8 @@ const DiscoverMoreAbout = () => {
                   do eiusmod tempor incididunt ut labore.
                 </p>
               </div>
-              <div>
-                <div>
+              <div className="large:flex large:flex-wrap">
+                <div className="large:w-1/2 large:px-[10px]">
                   <div className="bg-[#f7f7f7] rounded-[10px] py-[30px] px-[30px] mb-[30px]">
                     <h4 className="text-[20px] text-[#2a2a2a] font-bold">
                       150.640 +
@@ -34,7 +34,7 @@ const DiscoverMoreAbout = () => {
                     </span>
                   </div>
                 </div>
-                <div>
+                <div className="large:w-1/2 large:px-[10px]">
                   <div className="bg-[#f7f7f7] rounded-[10px] py-[30px] px-[30px] mb-[30px]">
                     <h4 className="text-[20px] text-[#2a2a2a] font-bold">
                       175.000 +
@@ -44,7 +44,7 @@ const DiscoverMoreAbout = () => {
                     </span>
                   </div>
                 </div>
-                <div>
+                <div className="large:w-full">
                   <div className="bg-[#f7f7f7] rounded-[10px] py-[30px] px-[30px] mb-[30px]">
                     <div>
                       <div>

@@ -26,8 +26,10 @@ const Countries = ({
           <div className="flex flex-col small:ml-5">
             <div className="flex justify-between items-center mt-5">
               <div>
-                <h4 className="text-[20px] mb-[5px]">{country}</h4>
-                <span className="text-[#afafaf] text-4">{contenient}</span>
+                <h4 className="text-[20px] mb-[5px]">{t(`${country}`)}</h4>
+                <span className="text-[#afafaf] text-4">
+                  {t(`${contenient}`)}
+                </span>
               </div>
               <div>
                 <a

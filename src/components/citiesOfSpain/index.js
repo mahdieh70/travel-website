@@ -6,13 +6,14 @@ import CallToReservation from "../callToReservation/index";
 import Footer from "../footer";
 import DiscoverMoreAbout from "../DiscoverMoreAbout";
 import { citiesOfSpainData } from "../sliders/citiesAndTownSlider";
+import { spainOffersSlider } from "../sliders/offerSliders/offersSlider";
 
 const CitiesOfSpain = () => {
   return (
     <>
       <SpainSectionBanner />
       <CitiesAndTownOfSpain citiesOfSpainData={citiesOfSpainData} />
-      <WeeklyOffersSpain />
+      <WeeklyOffersSpain spainOffersSlider={spainOffersSlider} />
       <DiscoverMoreAbout />
       <CallToReservation />
       <Footer />

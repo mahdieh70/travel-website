@@ -86,7 +86,7 @@ export const italyOffersSlider = [
   },
 ];
 
-export const SpainOffersSlider = [
+export const spainOffersSlider = [
   {
     image: "https://i.postimg.cc/nrwftDYf/Montjuic-Park.jpg",
     location: "Montjuic-Park",
