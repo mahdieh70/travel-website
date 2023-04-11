@@ -4,6 +4,7 @@ import BestWeeklyOffer from "../bestWeeklyOffer";
 
 const DealBanner = () => {
   const [countryName, setCountryName] = useState("");
+  const [priceOffer, setPriceOffer] = useState("");
 
   const countries = [
     { label: "Iran", value: "iran" },
@@ -23,6 +24,9 @@ const DealBanner = () => {
   const handleChange = (e) => {
     setCountryName(e.target.value);
   };
+  const handlePriceChange=(e)=>{
+setPriceOffer(e.target.value)
+  }
 
   const handleClick = (e) => {
     e.preventDefault();
@@ -79,7 +83,7 @@ const DealBanner = () => {
                 </div>
                 <div>
                   <fieldset className="border-none outline-none">
-                    <select className="mb-[30px]  outline-none border-b border-solid border-white border-x-0 border-t-0 w-full bg-teal-color text-[15px] text-white  py-2 px-2">
+                    <select onChange={handlePriceChange} className="mb-[30px]  outline-none border-b border-solid border-white border-x-0 border-t-0 w-full bg-teal-color text-[15px] text-white  py-2 px-2">
                       <option selected>Price Range :</option>
                       {priceRange.map((price) => (
                         <option>{price}</option>
@@ -105,6 +109,7 @@ const DealBanner = () => {
       <BestWeeklyOffer
         bestOfferCity={bestOfferCity}
         countryName={countryName}
+        priceOffer={priceOffer}
       />
     </>
   );

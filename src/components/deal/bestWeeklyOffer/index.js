@@ -1,6 +1,6 @@
 import React from "react";
 
-const BestWeeklyOffer = ({ bestOfferCity, countryName }) => {
+const BestWeeklyOffer = ({ bestOfferCity, countryName, priceOffer }) => {
   return (
     <section className="mt-[120px] px-6 w-full mx-auto">
       <div>
@@ -17,7 +17,10 @@ const BestWeeklyOffer = ({ bestOfferCity, countryName }) => {
             </div>
           </div>
           {bestOfferCity
-            .filter((item) => item.country.match(countryName))
+            .filter(
+              (item) =>
+                item.country.match(countryName) 
+            )
             .map((elem) => (
               <div className="w-full max-w-full ">
                 <div className="bg-[#f7f7f7] rounded-[23px] mb-[30px] ">
@@ -32,12 +35,16 @@ const BestWeeklyOffer = ({ bestOfferCity, countryName }) => {
                       </div>
                     </div>
                     <div>
-                      <div className="py-[30px] px-[30px]">
-                        <h4 className="text-[20px] font-bold pb-[25px] mb-[10px] border-b border-solid border-[#ddd] border-x-0 border-t-0">
+                      <div className="py-[30px] px-[30px] ">
+                        <div className="flex justify-between">
+                        <h4 className="text-[20px] font-bold pb-[25px] mb-[10px] ">
                           {elem.location}
                         </h4>
-                        <div className="flex">
-                          <div className="w-1/2 pr-[10px]">
+                        <h4 className="text-teal-color">{elem.price}</h4>
+                        </div>
+                        
+                        <div className="flex border-y border-solid border-[#ddd] border-x-0 py-[10px] px-0 ">
+                          <div className="w-1/2 pr-[10px] ">
                             <i className="fa-solid fa-clock text-[#777]"></i>
                             <span className="ml-[10px] text-[15px] text-[#afafaf] capitalize">
                               5 days
@@ -50,7 +57,7 @@ const BestWeeklyOffer = ({ bestOfferCity, countryName }) => {
                             </span>
                           </div>
                         </div>
-                        <p className="pt-[25px] mt-[10px] mb-[30px] border-t border-x-0 border-b-0 border-solid border-[#ddd] text-[15px] leading-[30px] text-[#afafaf]">
+                        <p className="pt-[25px] mt-[10px] mb-[30px] text-[15px] leading-[30px] text-[#afafaf]">
                           Lorem ipsum dolor sit amet dire consectetur adipiscing
                           elit.
                         </p>
@@ -68,9 +75,6 @@ const BestWeeklyOffer = ({ bestOfferCity, countryName }) => {
                 </div>
               </div>
             ))}
-
-          <div></div>
-          <div></div>
         </div>
       </div>
     </section>
