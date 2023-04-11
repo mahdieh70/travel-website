@@ -24,6 +24,10 @@ const DealBanner = () => {
     setCountryName(e.target.value);
   };
 
+  const handleClick = (e) => {
+    e.preventDefault();
+  };
+
   return (
     <>
       <section>
@@ -82,7 +86,10 @@ const DealBanner = () => {
                 </div>
                 <div>
                   <fieldset className="border-none outline-none">
-                    <button className="w-full capitalize text-center text-[14px] text-white bg-transparent border border-solid border-white py-2 px-[30px] inline-block rounded-[25px] font-medium tracking-[0.5px] overflow-hidden cursor-pointer">
+                    <button
+                      onClick={handleClick}
+                      className="w-full capitalize text-center text-[14px] text-white bg-transparent border border-solid border-white py-2 px-[30px] inline-block rounded-[25px] font-medium tracking-[0.5px] overflow-hidden cursor-pointer"
+                    >
                       search results
                     </button>
                   </fieldset>
