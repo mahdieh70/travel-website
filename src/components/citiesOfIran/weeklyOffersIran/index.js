@@ -152,8 +152,7 @@ const WeeklyOffersIran = ({ iranOffersSlider }) => {
               }}
               autoplay={true}
               pagination={true}
-              onSlideChange={() => console.log("slide change")}
-              onSwiper={(swiper) => console.log(swiper)}
+          
             >
               {iranOffersSlider.map((slide) => (
                 <SwiperSlide key={slide.image}>

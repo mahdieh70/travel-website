@@ -194,8 +194,7 @@ const CitiesAndTownOfIran = ({ citiesOfSpainData }) => {
                 }}
                 autoplay={true}
                 pagination={true}
-                onSlideChange={() => console.log("slide change")}
-                onSwiper={(swiper) => console.log(swiper)}
+             
               >
                 {citiesOfSpainData.map((slide) => (
                   <SwiperSlide key={slide.image}>
