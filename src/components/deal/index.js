@@ -10,7 +10,6 @@ const Deal = () => {
     <>
       <Header />
       <DealBanner  />
-    
       <CallToReservation />
     </>
   );
