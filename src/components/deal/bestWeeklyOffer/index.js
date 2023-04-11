@@ -19,7 +19,7 @@ const BestWeeklyOffer = ({ bestOfferCity, countryName, priceOffer }) => {
           {bestOfferCity
             .filter(
               (item) =>
-                item.country.match(countryName) 
+                item.country.match(countryName) && item.price.match(priceOffer)
             )
             .map((elem) => (
               <div className="w-full max-w-full ">
@@ -37,12 +37,12 @@ const BestWeeklyOffer = ({ bestOfferCity, countryName, priceOffer }) => {
                     <div>
                       <div className="py-[30px] px-[30px] ">
                         <div className="flex justify-between">
-                        <h4 className="text-[20px] font-bold pb-[25px] mb-[10px] ">
-                          {elem.location}
-                        </h4>
-                        <h4 className="text-teal-color">{elem.price}</h4>
+                          <h4 className="text-[20px] font-bold pb-[25px] mb-[10px] ">
+                            {elem.location}
+                          </h4>
+                          <h4 className="text-teal-color">{elem.price}</h4>
                         </div>
-                        
+
                         <div className="flex border-y border-solid border-[#ddd] border-x-0 py-[10px] px-0 ">
                           <div className="w-1/2 pr-[10px] ">
                             <i className="fa-solid fa-clock text-[#777]"></i>

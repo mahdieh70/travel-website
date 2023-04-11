@@ -7,26 +7,26 @@ const DealBanner = () => {
   const [priceOffer, setPriceOffer] = useState("");
 
   const countries = [
-    { label: "Iran", value: "iran" },
-    { label: "Italy", value: "italy" },
-    { label: "Spain", value: "spain" },
-    { label: "Turkey", value: "turkey" },
+    { id: 1, label: "Iran", value: "iran" },
+    { id: 2, label: "Italy", value: "italy" },
+    { id: 3, label: "Spain", value: "spain" },
+    { id: 4, label: "Turkey", value: "turkey" },
   ];
 
   const priceRange = [
-    "$100 - $250",
-    "$250 - $400",
-    "$400 - $500",
-    "$500 - $650",
-    "$650+",
+    { id: 1, prices: "$100 - $250" },
+    { id: 2, prices: "$250 - $400" },
+    { id: 3, prices: "$400 - $500" },
+    { id: 4, prices: "$500 - $650" },
+    { id: 5, prices: "$650+" },
   ];
 
   const handleChange = (e) => {
     setCountryName(e.target.value);
   };
-  const handlePriceChange=(e)=>{
-setPriceOffer(e.target.value)
-  }
+  const handlePriceChange = (e) => {
+    setPriceOffer(e.target.value);
+  };
 
   const handleClick = (e) => {
     e.preventDefault();
@@ -76,17 +76,23 @@ setPriceOffer(e.target.value)
                     >
                       <option selected>Destination :</option>
                       {countries.map((options) => (
-                        <option value={options.value}>{options.label}</option>
+                        <option key={options.id} value={options.value}>
+                          {options.label}
+                        </option>
                       ))}
                     </select>
                   </fieldset>
                 </div>
                 <div>
                   <fieldset className="border-none outline-none">
-                    <select onChange={handlePriceChange} className="mb-[30px]  outline-none border-b border-solid border-white border-x-0 border-t-0 w-full bg-teal-color text-[15px] text-white  py-2 px-2">
+                    <select
+                    value={priceOffer}
+                      onChange={handlePriceChange}
+                      className="mb-[30px]  outline-none border-b border-solid border-white border-x-0 border-t-0 w-full bg-teal-color text-[15px] text-white  py-2 px-2"
+                    >
                       <option selected>Price Range :</option>
                       {priceRange.map((price) => (
-                        <option>{price}</option>
+                        <option key={price.id}>{price.prices}</option>
                       ))}
                     </select>
                   </fieldset>
