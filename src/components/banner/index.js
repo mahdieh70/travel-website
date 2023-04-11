@@ -42,7 +42,7 @@ const Banner = () => {
       <section className="mt-[70px] large:mt-[70px]">
         <div>
           <div
-            className="bg-center bg-no-repeat w-full h-[calc(100vh-100px)]  large:h-[calc(100vh-70px)]"
+            className="bg-center bg-no-repeat w-full h-[100dvh]  large:h-[calc(100vh-70px)]"
             style={{
               backgroundImage: `linear-gradient(rgb(0 0 0 / 66%),rgb(0 0 0 / 59%)),url(${sliderData[currentSlide].image})`,
               backgroundSize: "100% 100%",

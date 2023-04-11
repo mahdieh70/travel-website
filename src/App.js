@@ -9,6 +9,7 @@ import CitiesOfItaly from "./components/citiesOfItaly";
 import CitiesOfSpain from "./components/citiesOfSpain";
 import CitiesOfTurkey from "./components/citiesOfTurkey";
 import Reservation from "./components/Reservation";
+import Deal from "./components/deal/index";
 
 const App = () => {
   return (
@@ -21,6 +22,7 @@ const App = () => {
         <Route path="italy" element={<CitiesOfItaly />} />
         <Route path="spain" element={<CitiesOfSpain />} />
         <Route path="turkey" element={<CitiesOfTurkey />} />
+        <Route path="deal" element={<Deal />} />
       </Routes>
     </>
   );

@@ -60,12 +60,12 @@ const Header = () => {
               {t("About")}
             </NavLink>
 
-            <a
-              href="#"
+            <NavLink
+              to="deal"
               className="text-[#1e1e1e] border-t-0 border-x-0 border-b border-solid border-[#eee] no-underline border-b text-5 py-4 mx-[10px] large:w-[100px]  large:border-none large:text-4 large:text-white"
             >
               {t("Deal")}
-            </a>
+            </NavLink>
 
             <NavLink
               to="reservation"

@@ -31,14 +31,7 @@ export const citiesOfIranData = [
     image: "https://i.postimg.cc/Mp2gJVjJ/tabatabaii-House-isfahan.jpg",
     townName: "Isfahan",
   },
-  {
-    image: "https://i.postimg.cc/FzhgxFYq/lavan-island.jpg",
-    townName: "Hormozgan",
-  },
-  {
-    image: "https://i.postimg.cc/R0R0HMzq/dowlat-Abad-Garden-yazd.jpg",
-    townName: "Yazd",
-  },
+ 
 ];
 
 export const citiesOfItalyData = [
@@ -77,15 +70,7 @@ export const citiesOfItalyData = [
       "https://i.postimg.cc/L4kMHb9H/21-1-rome-italy-Baths-of-Caracalla.jpg",
     townName: "Rome",
   },
-  {
-    image: "https://i.postimg.cc/Kc6TmM1N/uffizy-gallery.jpg",
-    townName: "Florence",
-  },
-  {
-    image:
-      "https://i.postimg.cc/5y824pyW/18-1-rome-italy-Museo-Casina-delle-Civette.jpg",
-    townName: "Rome",
-  },
+ 
 ];
 
 export const citiesOfSpainData = [
@@ -121,14 +106,7 @@ export const citiesOfSpainData = [
     image: "https://i.postimg.cc/MTQ9GjS8/4-Royal-Palace-1.jpg",
     townName: "Madrid",
   },
-  {
-    image: "https://i.postimg.cc/mr2xhjXW/pedralbes-Monestir.jpg",
-    townName: "Barselona",
-  },
-  {
-    image: "https://i.postimg.cc/8P6G2z70/5-La-Lonja.jpg",
-    townName: "Valencia",
-  },
+ 
 ];
 
 export const citiesOfTurkeyData = [
@@ -164,13 +142,6 @@ export const citiesOfTurkeyData = [
       image: "https://i.postimg.cc/fbJLYQCw/hamamono-ankara.jpg",
       townName: "Ankara",
     },
-    {
-      image: "https://i.postimg.cc/pV7mCT7g/pexels-beyza-erdem-7596433.jpg",
-      townName: "Buyukada",
-    },
-    {
-      image: "https://i.postimg.cc/tTp3XTyr/pexels-konevi-2159549.jpg",
-      townName: "Istanbul",
-    },
+    
   ];
   
