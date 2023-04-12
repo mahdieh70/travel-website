@@ -39,18 +39,18 @@ const Banner = () => {
 
   return (
     <>
-      <section className="mt-[70px] large:mt-[70px]">
+      <section className="h-[100dvh] ">
         <div>
           <div
-            className="bg-center bg-no-repeat w-full h-[100dvh]  large:h-[calc(100vh-70px)]"
+            className="bg-center bg-no-repeat w-full h-[100dvh]"
             style={{
               backgroundImage: `linear-gradient(rgb(0 0 0 / 66%),rgb(0 0 0 / 59%)),url(${sliderData[currentSlide].image})`,
               backgroundSize: "100% 100%",
             }}
           >
-            <div className="py-[70px] small:py-[80px] medium:py-[67px] large:py-[100px] xLarge:py-[110px] ">
+            <div className="pt-[30%] pb-[22%] flex justify-center items-center small:pt-[28%] small:pb-[15%] medium:pt-[24%] medium:pb-[12%] min-[820px]:pt-[25%] min-[820px]:pb-[12%] large:pt-[15%] large:pb-[15%]  xLarge:pt-[12%] xLarge:pb-[10%] xxLarge:pt-[10%] xxLarge:pb-[10%]">
               <div className=" flex-col flex-center ">
-                <h2 className="text-white text-[17px] medium:text-[20px]">
+                <h2 className="text-white mx-[10px] text-center text-[17px] font-medium medium:text-[20px]">
                 {t('Take a Glimpse Into The Beautiful Country Of')}
                 </h2>
                 <h1 className="text-white text-[38px] font-bold my-[18px] medium:text-[50px] ">
@@ -101,7 +101,7 @@ const Banner = () => {
                     <div>
                       <a
                         href="#"
-                        className="button text-white border-none bg-teal-color no-underline medium:py-4"
+                        className="button text-white font-['Poppins'] border-none bg-teal-color no-underline medium:py-4"
                       >
                         {t('Explore More')}
                       </a>

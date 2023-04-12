@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState} from "react";
 import { bestOfferCity } from "../bestOfferData";
 import BestWeeklyOffer from "../bestWeeklyOffer";
 
@@ -41,6 +41,8 @@ const DealBanner = () => {
       price: e.target.price.value,
     });
   };
+
+ 
 
   return (
     <>

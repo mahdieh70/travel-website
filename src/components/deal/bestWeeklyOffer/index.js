@@ -9,11 +9,13 @@ const BestWeeklyOffer = ({ bestOfferCity, countryName, priceOffer }) => {
     return priceOffer >= price;
   });
 
+ 
+
   return (
     <section className="mt-[120px] px-6 w-full mx-auto">
-      <div>
-        <div>
-          <div>
+      <div className="small:max-w-[540px] mx-auto medium:max-w-[720px] large:max-w-[960px]">
+        <div className="small:flex small:flex-wrap">
+          <div className="mx-auto">
             <div className="mb-[80px] text-center">
               <h2 className="mb-5 leading-9 text-[30px] font-bold text-[#2a2a2a]">
                 Best Weekly Offers In Each City
@@ -25,19 +27,19 @@ const BestWeeklyOffer = ({ bestOfferCity, countryName, priceOffer }) => {
             </div>
           </div>
           {filterPrice.map((elem) => (
-            <div className="w-full max-w-full ">
+            <div className="w-full max-w-full small:w-1/2 small:px-[5px] medium:px-[10px] ">
               <div className="bg-[#f7f7f7] rounded-[23px] mb-[30px] ">
-                <div>
-                  <div className="w-full ">
+                <div className="large:flex">
+                  <div className="w-full large:w-1/2 ">
                     <div>
                       <img
                         src={elem.image}
                         alt="imag"
-                        className="rounded-t-[23px] overflow-hidden w-full align-middle h-[600px]"
+                        className="rounded-t-[23px] overflow-hidden w-full align-middle h-[600px] small:h-[350px]"
                       />
                     </div>
                   </div>
-                  <div>
+                  <div className="large:w-1/2 large:self-center">
                     <div className="py-[30px] px-[30px] ">
                       <div className="flex justify-between">
                         <h4 className="text-[20px] font-bold pb-[25px] mb-[10px] ">

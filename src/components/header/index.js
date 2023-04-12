@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-
 import { NavLink } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 
@@ -62,7 +61,7 @@ const Header = () => {
 
             <NavLink
               to="deal"
-              className="text-[#1e1e1e] border-t-0 border-x-0 border-b border-solid border-[#eee] no-underline border-b text-5 py-4 mx-[10px] large:w-[100px]  large:border-none large:text-4 large:text-white"
+              className="text-[#1e1e1e] border-t-0 border-x-0 border-solid border-[#eee] no-underline border-b text-5 py-4 mx-[10px] large:w-[100px]  large:border-none large:text-4 large:text-white"
             >
               {t("Deal")}
             </NavLink>

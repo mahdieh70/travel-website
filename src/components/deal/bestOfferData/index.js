@@ -9,7 +9,7 @@ export const bestOfferCity = [
   {
     image: "https://i.postimg.cc/3wxKTH7D/shahzade-mahan-garden.jpg",
     country: "iran",
-    location: "shahzade-mahan-garden",
+    location: "mahan-garden",
     city: "kerman",
     price: "250",
   },
