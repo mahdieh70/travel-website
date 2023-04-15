@@ -9,12 +9,37 @@ const CallToReservation = () => {
         <div className="px-[10px]">
           <div className="text-center">
             <div>
-              <h2 className="text-[40px] uppercase font-bold text-white mb-[10px]">{t('Are You Looking To Travel')} ?</h2>
-              <h4 className="text-[20px] text-white font-semibold">{t('Make A Reservation By Clicking The Button')}</h4>
+              <h2
+                className={
+                  i18n.language === "en"
+                    ? "text-[40px] uppercase font-bold text-white mb-[10px]"
+                    : "text-[40px] uppercase font-bold text-white mb-[10px] direction"
+                }
+              >
+                {t("Are You Looking To Travel")} ?
+              </h2>
+              <h4
+                className={
+                  i18n.language === "en"
+                    ? "text-[20px] text-white font-semibold"
+                    : "text-[20px] text-white font-semibold direction"
+                }
+              >
+                {t("Make A Reservation By Clicking The Button")}
+              </h4>
             </div>
             <div>
               <div className="mt-7">
-                <a href="#" className="text-[14px] no-underline text-white border border-solid border-white rounded-[25px] inline-block py-3 px-[30px] ">{t('Book Yours Now')}</a>
+                <a
+                  href="#"
+                  className={
+                    i18n.language === "en"
+                      ? "text-[14px] no-underline text-white border border-solid border-white rounded-[25px] inline-block py-3 px-[30px]"
+                      : "text-[14px] no-underline text-white border border-solid border-white rounded-[25px] inline-block py-3 px-[30px] direction"
+                  }
+                >
+                  {t("Book Yours Now")}
+                </a>
               </div>
             </div>
           </div>

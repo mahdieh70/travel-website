@@ -8,9 +8,11 @@ import DiscoverMoreAbout from "../DiscoverMoreAbout";
 import { citiesOfIranData } from "../sliders/citiesAndTownSlider";
 import { iranOffersSlider } from "../sliders/offerSliders/offersSlider";
 
+
 const CitiesOfIran = () => {
   return (
     <>
+     
       <IranSectionBanner />
       <CitiesAndTownOfIran citiesOfIranData={citiesOfIranData} />
       <WeeklyOffersIran iranOffersSlider={iranOffersSlider} />

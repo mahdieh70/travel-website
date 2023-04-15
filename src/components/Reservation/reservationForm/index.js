@@ -1,8 +1,10 @@
 import React from "react";
 import { useFormik } from "formik";
 import * as Yup from "yup";
+import { useTranslation } from "react-i18next";
 
 const ReservationForm = () => {
+  const { t, i18n } = useTranslation();
   const formik = useFormik({
     initialValues: {
       fullName: "",
@@ -32,10 +34,9 @@ const ReservationForm = () => {
               className="py-[45px] px-[30px] bg-[#f9f9f9] rounded-b-3xl min-[1200px]:py-[60px] min-[1200px]:px-[120px]"
             >
               <div className="large:flex large:flex-wrap large:justify-between">
-                <div className="large:w-full" >
-                  <h4 className="text-[30px] text-center mb-[50px] text-[#2a2a2a] font-bold">
-                    Make Your <em className=" text-teal-color">Reservation</em>{" "}
-                    Through This <em className=" text-teal-color">Form</em>
+                <div className="large:w-full">
+                  <h4 className="text-[30px] text-center mb-[50px] text-[#2a2a2a] font-bold capitalize">
+                    {t('make your reservation through this form')}
                   </h4>
                 </div>
                 <div className="large:w-[49%]">
@@ -44,7 +45,7 @@ const ReservationForm = () => {
                       htmlFor="fullName"
                       className="text-[15px] text-[#afafaf] inline-block mb-2 capitalize large:mb-0"
                     >
-                      your name
+                      {t("your name")}
                     </label>
                     <input
                       className="w-full h-[46px] bg-transparent rounded-[23px] border border-solid border-[#e0e0e0] px-5 cursor-pointer mb-2 large:mt-2 "
@@ -54,7 +55,7 @@ const ReservationForm = () => {
                     />
                     {formik.errors.fullName ? (
                       <div className="text-rose-700 text-[14px]">
-                        {formik.errors.fullName}
+                        {t(`${formik.errors.fullName}`)}
                       </div>
                     ) : null}
                   </fieldset>
@@ -65,7 +66,7 @@ const ReservationForm = () => {
                       htmlFor="phone"
                       className="text-[15px] text-[#afafaf] inline-block mb-2 capitalize large:mb-0"
                     >
-                      your phone number
+                      {t("your phone number")}
                     </label>
                     <input
                       className="w-full h-[46px] bg-transparent rounded-[23px] border border-solid border-[#e0e0e0] px-5 cursor-pointer mt-2 large:mb-0 large:mt-2"
@@ -75,7 +76,7 @@ const ReservationForm = () => {
                     />
                     {formik.errors.phone ? (
                       <div className="text-rose-700 text-[14px]">
-                        {formik.errors.phone}
+                        {t(`${formik.errors.phone}`)}
                       </div>
                     ) : null}
                   </fieldset>
@@ -86,10 +87,10 @@ const ReservationForm = () => {
                       htmlFor="guests"
                       className="text-[15px] text-[#afafaf] inline-block mb-2 capitalize"
                     >
-                      number of guests
+                      {t("number of guests")}
                     </label>
                     <select className="w-full h-[46px] bg-transparent rounded-[23px] border border-solid border-[#e0e0e0] px-5 cursor-pointer mb-[30px] block text-[1rem] leading-[1.5] text-[#212529] large:mt-2">
-                      <option selected>3 or 4 0r 5</option>
+                      <option selected>{t("3 or 4 0r 5")}</option>
                       <option>1</option>
                       <option>2</option>
                       <option>3</option>
@@ -103,7 +104,7 @@ const ReservationForm = () => {
                       htmlFor="date"
                       className="text-[15px] text-[#afafaf] inline-block mb-2 capitalize"
                     >
-                      check in date
+                      {t("check in date")}
                     </label>
                     <input
                       className="w-full h-[46px] text-[#aaa] bg-transparent rounded-[23px] border border-solid border-[#e0e0e0] px-5 cursor-pointer mt-2 small:text-[16px]"
@@ -113,7 +114,7 @@ const ReservationForm = () => {
                     />
                     {formik.errors.date ? (
                       <div className="text-rose-700 text-[14px]">
-                        {formik.errors.date}
+                        {t(`${formik.errors.date}`)}
                       </div>
                     ) : null}
                   </fieldset>
@@ -125,23 +126,23 @@ const ReservationForm = () => {
                       htmlFor="destination"
                       className="text-[15px] text-[#afafaf] inline-block mb-2 capitalize"
                     >
-                      choose your destination
+                      {t("choose your destination")}
                     </label>
                     <select className="w-full h-[46px] bg-transparent rounded-[23px] border border-solid border-[#e0e0e0] px-5 cursor-pointer mb-[30px] block text-[1rem] leading-[1.5] text-[#212529] large:mt-2">
-                      <option selected>Iran, Mazandaran</option>
-                      <option>Iran, Shiraz</option>
-                      <option>Iran, Isfahan</option>
-                      <option>Iran, Yazd</option>
-                      <option>Iran, Hormozgan</option>
-                      <option>Italy, Florence</option>
-                      <option>Italy, Venice</option>
-                      <option>Italy, Rome</option>
-                      <option>Spain, Barselona</option>
-                      <option>Spain, Madrid</option>
-                      <option>Spain, Valencia</option>
-                      <option>Turkey, Ankara</option>
-                      <option>Turkey, Istanbul</option>
-                      <option>Turkey, Buyukada</option>
+                      <option selected>{t("Iran, Mazandaran")}</option>
+                      <option>{t("Iran, Shiraz")}</option>
+                      <option>{t("Iran, Isfahan")}</option>
+                      <option>{t("Iran, Yazd")}</option>
+                      <option>{t("Iran, Hormozgan")}</option>
+                      <option>{t("Italy, Florence")}</option>
+                      <option>{t("Italy, Venice")}</option>
+                      <option>{t("Italy, Rome")}</option>
+                      <option>{t("Spain, Barselona")}</option>
+                      <option>{t("Spain, Madrid")}</option>
+                      <option>{t("Spain, Valencia")}</option>
+                      <option>{t("Turkey, Ankara")}</option>
+                      <option>{t("Turkey, Istanbul")}</option>
+                      <option>{t("Turkey, Buyukada")}</option>
                     </select>
                   </fieldset>
                 </div>
@@ -151,7 +152,7 @@ const ReservationForm = () => {
                       type="submit"
                       className="text-[14px] text-white bg-teal-color py-3 px-[30px] w-full text-center inline-block rounded-[25px] capitalize tracking-[0.5px] overflow-hidden border-0 outline-none"
                     >
-                      make your reservation now
+                      {t("make your reservation now")}
                     </button>
                   </fieldset>
                 </div>

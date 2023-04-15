@@ -1,7 +1,10 @@
 import React from "react";
 import discoverMore from "../../assets/discoverMoreImage/about-left-image.jpg";
+import { useTranslation } from "react-i18next";
+import "../../index.css";
 
 const DiscoverMoreAbout = () => {
+  const { t, i18n } = useTranslation();
   return (
     <>
       <section className="mt-[120px] pb-[120px] border-b border-t-0 border-x-0 border-solid border-[#eee]">
@@ -15,44 +18,75 @@ const DiscoverMoreAbout = () => {
 
             <div className="large:w-1/2">
               <div className="mb-10 ">
-                <h2 className="text-[30px] leading-[36px] mb-[20px] font-bold text-[#2a2a2a]">
-                  Discover More About Our Country
+                <h2
+                  className={
+                    i18n.language === "en"
+                      ? "text-[30px] leading-[36px] mb-[20px] font-bold text-[#2a2a2a]"
+                      : "text-[30px] leading-[36px] mb-[20px] font-bold text-[#2a2a2a] direction"
+                  }
+                >
+                  {t("Discover More About Our Country")}
                 </h2>
-                <p className="text-[15px] leading-[30px] text-[#afafaf]">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore.
+                <p
+                  className={
+                    i18n.language === "en"
+                      ? "text-[15px] leading-[30px] text-[#afafaf]"
+                      : "text-[15px] leading-[30px] text-[#afafaf] direction"
+                  }
+                >
+                  {t(
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore dolor sit amet, consectetur adipiscing elit, sed do eiusmod."
+                  )}
                 </p>
               </div>
               <div className="large:flex large:flex-wrap">
                 <div className="large:w-1/2 large:px-[10px]">
-                  <div className="bg-[#f7f7f7] rounded-[10px] py-[30px] px-[30px] mb-[30px]">
+                  <div
+                    className={
+                      i18n.language === "en"
+                        ? "bg-[#f7f7f7] rounded-[10px] py-[30px] px-[30px] mb-[30px]"
+                        : "bg-[#f7f7f7] rounded-[10px] py-[30px] px-[30px] mb-[30px] text-right"
+                    }
+                  >
                     <h4 className="text-[20px] text-[#2a2a2a] font-bold">
                       150.640 +
                     </h4>
                     <span className="text-teal-color text-[15px]">
-                      Total Guests Yearly
+                      {t("Total Guests Yearly")}
                     </span>
                   </div>
                 </div>
                 <div className="large:w-1/2 large:px-[10px]">
-                  <div className="bg-[#f7f7f7] rounded-[10px] py-[30px] px-[30px] mb-[30px]">
+                  <div
+                    className={
+                      i18n.language === "en"
+                        ? "bg-[#f7f7f7] rounded-[10px] py-[30px] px-[30px] mb-[30px]"
+                        : "bg-[#f7f7f7] rounded-[10px] py-[30px] px-[30px] mb-[30px] text-right"
+                    }
+                  >
                     <h4 className="text-[20px] text-[#2a2a2a] font-bold">
                       175.000 +
                     </h4>
                     <span className="text-teal-color text-[15px]">
-                      Amazing Accomoditations
+                      {t("Amazing Accomoditations")}
                     </span>
                   </div>
                 </div>
                 <div className="large:w-full">
-                  <div className="bg-[#f7f7f7] rounded-[10px] py-[30px] px-[30px] mb-[30px]">
+                  <div
+                    className={
+                      i18n.language === "en"
+                        ? "bg-[#f7f7f7] rounded-[10px] py-[30px] px-[30px] mb-[30px]"
+                        : "bg-[#f7f7f7] rounded-[10px] py-[30px] px-[30px] mb-[30px] text-right"
+                    }
+                  >
                     <div>
                       <div>
                         <h4 className="text-[20px] text-[#2a2a2a] font-bold">
                           12.560 +
                         </h4>
                         <span className="text-[15px] text-teal-color">
-                          Amazing Places
+                          {t("Amazing Places")}
                         </span>
                       </div>
                       <div>
@@ -60,21 +94,37 @@ const DiscoverMoreAbout = () => {
                           240.580 +
                         </h4>
                         <span className="text-[15px] text-teal-color">
-                          Different Check-ins Yearly
+                          {t("Different Check-ins Yearly")}
                         </span>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
-              <p className="text-[15px] leading-[30px] text-[#afafaf]">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore. Lorem ipsum dolor sit amet,
-                consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                labore.
+              <p
+                className={
+                  i18n.language === "en"
+                    ? "text-[15px] leading-[30px] text-[#afafaf]"
+                    : "text-[15px] leading-[30px] text-[#afafaf] direction"
+                }
+              >
+                {t(
+                  "Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed doeiusmod tempor incididunt ut labore. Lorem ipsum dolor sit amet,consectetur adipiscing elit, sed do eiusmod tempor incididunt utlabore."
+                )}
               </p>
-              <div className="mt-[30px]">
-                <a href="#" className="text-center text-[15px] text-white bg-teal-color py-4 px-[30px] inline-block rounded-[25px] tracking-[0.5px] overflow-hidden no-underline">Discover More</a>
+              <div
+                className={i18n.language === "en" ? "mt-[30px]" : "mt-[30px] direction"}
+              >
+                <a
+                  href="#"
+                  className={
+                    i18n.language === "en"
+                      ? "text-center text-[15px] text-white bg-teal-color py-4 px-[30px] inline-block rounded-[25px] tracking-[0.5px] overflow-hidden no-underline"
+                      : "text-center text-[16px] text-white bg-teal-color py-4 px-[30px] inline-block rounded-[25px] tracking-[0.5px] overflow-hidden no-underline direction"
+                  }
+                >
+                  {t("Discover More")}
+                </a>
               </div>
             </div>
           </div>

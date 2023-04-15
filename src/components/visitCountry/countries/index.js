@@ -1,6 +1,8 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
 
+import "../../../index.css";
+
 const Countries = ({
   image,
   country,
@@ -23,24 +25,54 @@ const Countries = ({
           </div>
         </div>
         <div>
-          <div className="flex flex-col small:ml-5">
-            <div className="flex justify-between items-center mt-5">
+          <div className="flex flex-col mb-9 small:ml-5">
+            <div
+              className={
+                i18n.language === "en"
+                  ? "flex justify-between items-center mt-5"
+                  : "flex justify-between items-center mt-5 direction"
+              }
+            >
               <div>
-                <h4 className="text-[20px] mb-[5px]">{t(`${country}`)}</h4>
-                <span className="text-[#afafaf] text-4">
+                <h4
+                  className={
+                    i18n.language === "en"
+                      ? "text-[20px] mb-[5px]"
+                      : "text-[20px] mb-[5px] direction"
+                  }
+                >
+                  {t(`${country}`)}
+                </h4>
+                <span
+                  className={
+                    i18n.language === "en"
+                      ? "text-[#afafaf] text-4"
+                      : "text-[#afafaf] text-4 direction"
+                  }
+                >
                   {t(`${contenient}`)}
                 </span>
               </div>
               <div>
                 <a
                   href="#"
-                  className="text-[14px] py-[14px] px-[15px] text-white bg-teal-color inline-block rounded-[25px] no-underline tracking-[1px] font-bold"
+                  className={
+                    i18n.language === "en"
+                      ? "text-[14px] py-[14px] px-[15px] text-white bg-teal-color inline-block rounded-[25px] no-underline tracking-[1px] font-bold"
+                      : "text-[14px] py-[14px] px-[15px] text-white bg-teal-color inline-block rounded-[25px] no-underline tracking-[1px] font-bold direction"
+                  }
                 >
                   {t("Explore More")}
                 </a>
               </div>
             </div>
-            <p className="text-[#afafaf] my-[18px] leading-7 small:text-[16px] ">
+            <p
+              className={
+                i18n.language === "en"
+                  ? "text-[#afafaf] my-[18px] leading-7 small:text-[16px]"
+                  : "text-[#afafaf] my-[18px] leading-7 small:text-[16px] direction"
+              }
+            >
               {t(
                 "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore dolor sit amet, consectetur adipiscing elit, sed do eiusmod."
               )}
@@ -59,15 +91,6 @@ const Countries = ({
                 {averagePrice}
               </li>
             </ul>
-            <div className="mt-5 mb-9">
-              <a
-                href="#"
-                className="text-[14px] text-teal-color no-underline font-medium flex items-center"
-              >
-                Need Directions ?
-                <i className="fa-solid fa-arrow-right ml-[5px]"></i>
-              </a>
-            </div>
           </div>
         </div>
       </div>

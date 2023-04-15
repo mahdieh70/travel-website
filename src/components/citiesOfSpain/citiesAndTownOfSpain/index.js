@@ -197,7 +197,7 @@ const CitiesAndTownOfIran = ({ citiesOfSpainData }) => {
              
               >
                 {citiesOfSpainData.map((slide) => (
-                  <SwiperSlide key={slide.image}>
+                  <SwiperSlide key={slide.id}>
                     <img
                       src={slide.image}
                       alt="imag"
