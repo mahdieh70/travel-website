@@ -16,14 +16,7 @@ const ReservationBanner = () => {
                 "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doeiusmod tempor incididunt uttersi labore et dolore magna aliqua is ipsum suspendisse ultrices gravida"
               )}
             </p>
-            <div>
-              <a
-                href="#"
-                className="bg-white text-teal-color text-center text-[14px] border border-solid border-teal-color no-underline py-3 px-[30px] inline-block rounded-[25px] font-medium tracking-[]0.5px] overflow-hidden"
-              >
-                {t("Discover More")}
-              </a>
-            </div>
+            
           </div>
         </div>
       </section>

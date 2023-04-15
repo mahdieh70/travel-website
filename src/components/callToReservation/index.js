@@ -1,5 +1,6 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
+import { Link } from "react-router-dom";
 
 const CallToReservation = () => {
   const { t, i18n } = useTranslation();
@@ -12,8 +13,8 @@ const CallToReservation = () => {
               <h2
                 className={
                   i18n.language === "en"
-                    ? "text-[40px] uppercase font-bold text-white mb-[10px]"
-                    : "text-[40px] uppercase font-bold text-white mb-[10px] direction"
+                    ? "text-[36px] uppercase font-bold text-white mb-[10px]"
+                    : "text-[36px] uppercase font-bold text-white mb-[10px] direction"
                 }
               >
                 {t("Are You Looking To Travel")} ?
@@ -30,8 +31,8 @@ const CallToReservation = () => {
             </div>
             <div>
               <div className="mt-7">
-                <a
-                  href="#"
+                <Link
+                  to="reservation"
                   className={
                     i18n.language === "en"
                       ? "text-[14px] no-underline text-white border border-solid border-white rounded-[25px] inline-block py-3 px-[30px]"
@@ -39,7 +40,7 @@ const CallToReservation = () => {
                   }
                 >
                   {t("Book Yours Now")}
-                </a>
+                </Link>
               </div>
             </div>
           </div>

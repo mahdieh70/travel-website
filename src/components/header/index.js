@@ -143,8 +143,8 @@ const Header = () => {
                 to="/"
                 className={
                   i18n.language === "en"
-                    ? "text-[16px] text-black mx-[30px] no-underline active:active"
-                    : "direction text-[20px] text-black mx-[30px] no-underline active:active"
+                    ? "text-[16px] text-stone-700 mx-[30px] no-underline active:active"
+                    : "direction text-[18px] text-stone-700 mx-[30px] no-underline active:active"
                 }
               >
                 {t("Home")}
@@ -155,8 +155,8 @@ const Header = () => {
                 to="/iran"
                 className={
                   i18n.language === "en"
-                    ? "text-[16px] text-black mx-[30px] no-underline"
-                    : "direction text-[20px] text-black mx-[30px] no-underline"
+                    ? "text-[16px] text-stone-700 mx-[30px] no-underline"
+                    : "direction text-[18px] text-stone-700 mx-[30px] no-underline"
                 }
               >
                 {t("About")}
@@ -167,8 +167,8 @@ const Header = () => {
                 to="/deal"
                 className={
                   i18n.language === "en"
-                    ? "text-[16px] text-black mx-[30px] no-underline"
-                    : "direction text-[20px] text-black mx-[30px] no-underline"
+                    ? "text-[16px] text-stone-700 mx-[30px] no-underline"
+                    : "direction text-[18px] text-stone-700 mx-[30px] no-underline"
                 }
               >
                 {t("Deal")}
@@ -179,8 +179,8 @@ const Header = () => {
                 to="/reservation"
                 className={
                   i18n.language === "en"
-                    ? "text-[16px] text-black mx-[30px] no-underline"
-                    : "direction text-[20px] text-black mx-[30px] no-underline"
+                    ? "text-[16px] text-stone-700 mx-[30px] no-underline"
+                    : "direction text-[18px] text-stone-700 mx-[30px] no-underline"
                 }
               >
                 {t("Reservation")}

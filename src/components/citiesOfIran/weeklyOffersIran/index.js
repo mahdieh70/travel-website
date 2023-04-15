@@ -118,9 +118,12 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 import "swiper/css/autoplay";
+import { Link, useNavigate } from "react-router-dom";
 
 const WeeklyOffersIran = ({ iranOffersSlider }) => {
+  const navigate = useNavigate();
   const { t, i18n } = useTranslation();
+  const handleClick = () => navigate("/reservation");
   return (
     <>
       <section className="mt-[120px] pb-[120px] border-b border-solid border-[#eee] border-t-0">
@@ -280,8 +283,9 @@ const WeeklyOffersIran = ({ iranOffersSlider }) => {
                       </li>
                     </ul>
                     <div className="mt-[30px]">
-                      <a
-                        href="#"
+                      <Link
+                        onClick={handleClick}
+                        to="/reservation"
                         className={
                           i18n.language === "en"
                             ? "text-center text-[14px] text-white bg-teal-color py-3 px-[30px] inline-block rounded-[25px] font-medium tracking-[0.5px] no-underline overflow-hidden"
@@ -289,7 +293,7 @@ const WeeklyOffersIran = ({ iranOffersSlider }) => {
                         }
                       >
                         {t("Make A Reservation")}
-                      </a>
+                      </Link>
                     </div>
                   </div>
                 </SwiperSlide>

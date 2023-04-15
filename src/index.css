@@ -20,8 +20,11 @@
   direction: rtl;
   font-family: "b-yekan";
 }
-.active{
-  color: rgb(11, 101, 11)
+.persionFontFamily {
+  font-family: "b-yekan";
+}
+.active {
+  color: rgb(11, 101, 11);
 }
 
 @layer components {

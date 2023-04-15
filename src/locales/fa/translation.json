@@ -14,11 +14,11 @@
   "Territory": "مساحت",
   "AVG Price": "میانگین قیمت",
   "Explore More": "بیشتر ببینید",
-  "Visit One Of Our Countries Now": "از یکی از کشورها دیدن کنید",
+  "Visit One Of Our Countries Now": "از یکی از کشورها دیدن کنید.",
   "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua": "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است",
   "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore dolor sit amet, consectetur adipiscing elit, sed do eiusmod.": "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است",
   "Are You Looking To Travel": "آیا قصد مسافرت دارید",
-  "Make A Reservation By Clicking The Button": "با کلیک بر روی دکمه زیر ،رزرو کنید",
+  "Make A Reservation By Clicking The Button": "با کلیک بر روی دکمه زیر، رزرو کنید .",
   "Book Yours Now": "رزرو کنید",
   "IRAN": "ایران",
   "ITALY": "ایتالیا",
@@ -112,5 +112,20 @@
   "make your reservation now": "همین حالا رزرو کنید",
   "Name Required": "لطفا نام و نام خانوادگی خود را وارد کنید",
   "Phone Required": "لطفا شماره تماس خود را وارد کنید",
-  "date Required": "لطفا تاریخ مورد نظر خود را انتخاب کنید"
+  "date Required": "لطفا تاریخ مورد نظر خود را انتخاب کنید",
+  "cities & towns": "شهرها و استان های ",
+  "Of Italy": " ایتالیا",
+  "Florence": "فلورانس",
+  "Venice": "ونیز",
+  "Rome": "رم",
+  "Of Spain": " اسپانیا",
+  "Barselona": "بارسلون",
+  "Madrid": "مادرید",
+  "Valencia": "والنسیا",
+  "Of Turkey":" ترکیه",
+  "Ankara":"آنکارا",
+  "Istanbul":"استانبول",
+  "Buyukada":"بیوکادا"
+
+
 }

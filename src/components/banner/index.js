@@ -200,8 +200,8 @@ const Banner = () => {
                   <h2
                     className={
                       i18n.language === "en"
-                        ? "text-[15px] font-medium text-white mb-5 small:text-[20px]"
-                        : "direction text-[15px] font-medium text-white mb-5 small:text-[30px]"
+                        ? "text-[14px] font-medium text-white mb-5 small:text-[20px]"
+                        : "direction text-[20px] font-medium text-white mb-5 small:text-[30px]"
                     }
                   >
                     {t("Take a Glimpse Into The Beautiful Country Of")}
@@ -210,8 +210,8 @@ const Banner = () => {
                     {t(`${sliderData[currentSlide].countryName}`)}
                   </h1>
                   <div>
-                    <a
-                      href="#"
+                    <Link
+                      to={sliderData[currentSlide].countryName}
                       className={
                         i18n.language === "en"
                           ? "text-[14px] bg-transparent text-teal-color py-3 px-[30px] inline-block rounded-[25px] font-medium tracking-[0.5px] relative overflow-hidden no-underline border border-solid border-teal-color"
@@ -219,7 +219,7 @@ const Banner = () => {
                       }
                     >
                       {t("Go There")}
-                    </a>
+                    </Link>
                   </div>
                 </div>
                 <div
@@ -280,17 +280,17 @@ const Banner = () => {
                     </div>
                     <div className="flex-[0_0_auto] w-1/2 max-w-full px-[10px] large:w-[25%]">
                       <div className="text-left mt-2 ">
-                        <a
-                          href="#"
+                        <Link
+                          to={sliderData[currentSlide].countryName}
                           className={
                             i18n.language === "en"
-                              ? "text-center text-[14px] text-white bg-teal-color py-4 px-[30px] inline-block rounded-[25px] no-underline font-medium capitalize tracking-[0.5px] relative overflow-hidden"
-                              : "text-center text-[14px] text-white bg-teal-color py-4 px-[30px] inline-block rounded-[25px] no-underline font-medium capitalize tracking-[0.5px] relative overflow-hidden direction"
+                              ? "text-center text-[14px] text-white bg-teal-color py-4 px-[24px] inline-block rounded-[25px] no-underline font-medium capitalize tracking-[0.5px] relative overflow-hidden large:px-[30px]"
+                              : "text-center text-[14px] text-white bg-teal-color py-4 px-[24px] inline-block rounded-[25px] no-underline font-medium capitalize tracking-[0.5px] relative overflow-hidden large:px-[30px] direction"
                           }
                           style={{ transition: "all 0.3s" }}
                         >
                           {t("Explore More")}
-                        </a>
+                        </Link>
                       </div>
                     </div>
                   </div>

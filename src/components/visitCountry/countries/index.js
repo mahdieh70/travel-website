@@ -1,5 +1,6 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
+import { Link } from "react-router-dom";
 
 import "../../../index.css";
 
@@ -54,8 +55,8 @@ const Countries = ({
                 </span>
               </div>
               <div>
-                <a
-                  href="#"
+                <Link
+                  to={country}
                   className={
                     i18n.language === "en"
                       ? "text-[14px] py-[14px] px-[15px] text-white bg-teal-color inline-block rounded-[25px] no-underline tracking-[1px] font-bold"
@@ -63,7 +64,7 @@ const Countries = ({
                   }
                 >
                   {t("Explore More")}
-                </a>
+                </Link>
               </div>
             </div>
             <p

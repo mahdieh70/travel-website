@@ -112,20 +112,7 @@ const DiscoverMoreAbout = () => {
                   "Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed doeiusmod tempor incididunt ut labore. Lorem ipsum dolor sit amet,consectetur adipiscing elit, sed do eiusmod tempor incididunt utlabore."
                 )}
               </p>
-              <div
-                className={i18n.language === "en" ? "mt-[30px]" : "mt-[30px] direction"}
-              >
-                <a
-                  href="#"
-                  className={
-                    i18n.language === "en"
-                      ? "text-center text-[15px] text-white bg-teal-color py-4 px-[30px] inline-block rounded-[25px] tracking-[0.5px] overflow-hidden no-underline"
-                      : "text-center text-[16px] text-white bg-teal-color py-4 px-[30px] inline-block rounded-[25px] tracking-[0.5px] overflow-hidden no-underline direction"
-                  }
-                >
-                  {t("Discover More")}
-                </a>
-              </div>
+             
             </div>
           </div>
         </div>

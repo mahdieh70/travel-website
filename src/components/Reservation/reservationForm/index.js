@@ -2,6 +2,7 @@ import React from "react";
 import { useFormik } from "formik";
 import * as Yup from "yup";
 import { useTranslation } from "react-i18next";
+import "../../../index.css";
 
 const ReservationForm = () => {
   const { t, i18n } = useTranslation();
@@ -33,10 +34,16 @@ const ReservationForm = () => {
               onSubmit={formik.handleSubmit}
               className="py-[45px] px-[30px] bg-[#f9f9f9] rounded-b-3xl min-[1200px]:py-[60px] min-[1200px]:px-[120px]"
             >
-              <div className="large:flex large:flex-wrap large:justify-between">
+              <div
+                className={
+                  i18n.language === "en"
+                    ? "large:flex large:flex-wrap large:justify-between"
+                    : "large:flex large:flex-wrap large:justify-between"
+                }
+              >
                 <div className="large:w-full">
                   <h4 className="text-[30px] text-center mb-[50px] text-[#2a2a2a] font-bold capitalize">
-                    {t('make your reservation through this form')}
+                    {t("make your reservation through this form")}
                   </h4>
                 </div>
                 <div className="large:w-[49%]">
@@ -90,7 +97,6 @@ const ReservationForm = () => {
                       {t("number of guests")}
                     </label>
                     <select className="w-full h-[46px] bg-transparent rounded-[23px] border border-solid border-[#e0e0e0] px-5 cursor-pointer mb-[30px] block text-[1rem] leading-[1.5] text-[#212529] large:mt-2">
-                      <option selected>{t("3 or 4 0r 5")}</option>
                       <option>1</option>
                       <option>2</option>
                       <option>3</option>

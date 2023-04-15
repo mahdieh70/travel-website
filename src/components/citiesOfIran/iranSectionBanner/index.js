@@ -45,18 +45,7 @@ const IranSectionBanner = () => {
                     "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua"
                   )}
                 </p>
-                <div className="z-[2] relative mt-[30px]">
-                  <a
-                    href="#"
-                    className={
-                      i18n.language === "en"
-                        ? "bg-white text-teal-color text-center text-[14px] py-4 px-[30px] rounded-[25px] tracking-[0.5px] overflow-hidden inline-block no-underline"
-                        : "bg-white text-teal-color text-center text-[14px] py-4 px-[30px] rounded-[25px] tracking-[0.5px] overflow-hidden inline-block no-underline direction"
-                    }
-                  >
-                    {t("Discover More")}
-                  </a>
-                </div>
+               
               </div>
             </div>
           </div>
