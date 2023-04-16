@@ -111,6 +111,7 @@ import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Scrollbar, A11y, Autoplay } from "swiper";
 import { useTranslation } from "react-i18next";
+import { Link, useNavigate } from "react-router-dom";
 import "../../../index.css";
 
 import "swiper/css";
@@ -118,7 +119,6 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 import "swiper/css/autoplay";
-import { Link, useNavigate } from "react-router-dom";
 
 const WeeklyOffersIran = ({ iranOffersSlider }) => {
   const navigate = useNavigate();
@@ -148,10 +148,19 @@ const WeeklyOffersIran = ({ iranOffersSlider }) => {
         <div className="relative mx-[15px] ">
           <div>
             <Swiper
-              modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
+            style={{
+              "--swiper-pagination-color": "#FFBA08",
+             
+              "--swiper-pagination-bullet-inactive-color": "#999999",
+              "--swiper-pagination-bullet-inactive-opacity": "1",
+              "--swiper-pagination-bullet-size": "14px",
+              "--swiper-pagination-bullet-horizontal-gap": "6px"
+            }}
+              modules={[Navigation, Pagination, Scrollbar, A11y]}
+              pagination={{ clickable: true }}
               spaceBetween={30}
               slidesPerView={1}
-              loop={true}
+  
               breakpoints={{
                 800: {
                   slidesPerView: 2,
@@ -160,8 +169,7 @@ const WeeklyOffersIran = ({ iranOffersSlider }) => {
                   slidesPerView: 3,
                 },
               }}
-              autoplay={true}
-              pagination={true}
+             
             >
               {iranOffersSlider.map((slide) => (
                 <SwiperSlide key={slide.image}>
@@ -195,7 +203,7 @@ const WeeklyOffersIran = ({ iranOffersSlider }) => {
                           className={
                             i18n.language === "en"
                               ? "text-[15px] text-[#2a2a2a] font-bold"
-                              : "text-[20px] text-[#2a2a2a] font-bold direction"
+                              : "text-[16px] text-[#2a2a2a] font-bold direction"
                           }
                         >
                           {t(`${slide.location}`)}
@@ -282,7 +290,7 @@ const WeeklyOffersIran = ({ iranOffersSlider }) => {
                         {t("Daily Places Visit")}
                       </li>
                     </ul>
-                    <div className="mt-[30px]">
+                    <div className="mt-[20px]">
                       <Link
                         onClick={handleClick}
                         to="/reservation"

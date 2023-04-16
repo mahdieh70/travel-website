@@ -198,6 +198,14 @@ const CitiesAndTownOfIran = ({ citiesOfItalyData }) => {
 
             <div className="rounded-[10px] overflow-hidden relative ">
               <Swiper
+                style={{
+                  "--swiper-pagination-color": "#FFBA08",
+
+                  "--swiper-pagination-bullet-inactive-color": "#999999",
+                  "--swiper-pagination-bullet-inactive-opacity": "1",
+                  "--swiper-pagination-bullet-size": "14px",
+                  "--swiper-pagination-bullet-horizontal-gap": "6px",
+                }}
                 modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
                 spaceBetween={30}
                 slidesPerView={1}
@@ -210,8 +218,11 @@ const CitiesAndTownOfIran = ({ citiesOfItalyData }) => {
                     slidesPerView: 4,
                   },
                 }}
-                autoplay={true}
                 pagination={true}
+                autoplay={{
+                  delay: 3000,
+                  disableOnInteraction: false,
+                }}
               >
                 {citiesOfItalyData.map((slide) => (
                   <SwiperSlide key={slide.id}>
@@ -220,11 +231,13 @@ const CitiesAndTownOfIran = ({ citiesOfItalyData }) => {
                       alt="imag"
                       className="aspect-square w-full h-full"
                     />
-                    <h4 className={
+                    <h4
+                      className={
                         i18n.language === "en"
                           ? "absolute left-[30px] bottom-[30px] text-[20px] text-white font-bold"
                           : "absolute left-[30px] bottom-[30px] text-[20px] text-white font-bold direction"
-                      }>
+                      }
+                    >
                       {t(`${slide.townName}`)}
                     </h4>
                   </SwiperSlide>

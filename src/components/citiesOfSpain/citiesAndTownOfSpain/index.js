@@ -198,6 +198,14 @@ const CitiesAndTownOfIran = ({ citiesOfSpainData }) => {
 
             <div className="rounded-[10px] overflow-hidden relative ">
               <Swiper
+                style={{
+                  "--swiper-pagination-color": "#FFBA08",
+
+                  "--swiper-pagination-bullet-inactive-color": "#999999",
+                  "--swiper-pagination-bullet-inactive-opacity": "1",
+                  "--swiper-pagination-bullet-size": "15px",
+                  "--swiper-pagination-bullet-horizontal-gap": "6px",
+                }}
                 modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
                 spaceBetween={30}
                 slidesPerView={1}
@@ -210,8 +218,11 @@ const CitiesAndTownOfIran = ({ citiesOfSpainData }) => {
                     slidesPerView: 4,
                   },
                 }}
-                autoplay={true}
                 pagination={true}
+                autoplay={{
+                  delay: 3000,
+                  disableOnInteraction: false,
+                }}
               >
                 {citiesOfSpainData.map((slide) => (
                   <SwiperSlide key={slide.id}>
