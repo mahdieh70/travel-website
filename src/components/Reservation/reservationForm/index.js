@@ -38,7 +38,7 @@ const ReservationForm = () => {
                 className={
                   i18n.language === "en"
                     ? "large:flex large:flex-wrap large:justify-between"
-                    : "large:flex large:flex-wrap large:justify-between"
+                    : "text-right large:flex large:flex-wrap large:justify-between"
                 }
               >
                 <div className="large:w-full">
