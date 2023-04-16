@@ -12,42 +12,33 @@ const Contact = () => {
               <div className=" bg-[#f0f0f0]  text-center px-[30px] py-[30px] rounded-[23px]">
                 <i className="fa-solid fa-phone bg-blue-300 w-[60px] h-[60px] inline-block text-center leading-[60px] rounded-full text-teal-color text-[20px] mb-5"></i>
                 <h4 className="text-[21px] font-bold mb-[10px] text-[#2a2a2a] capitalize">
-                  {t('make a phone call')}
+                  {t("make a phone call")}
                 </h4>
-                <a
-                  href="#"
-                  className="text-[15px] text-teal-color no-underline"
-                >
+                <span className="text-[15px] text-teal-color">
                   +123 456 789 (0)
-                </a>
+                </span>
               </div>
             </div>
             <div className="w-full max-w-full mb-[30px]  rounded-[23px] small:w-1/2 px-[15px] xLarge:w-[33.33%] ">
               <div className=" bg-[#f0f0f0]  text-center px-[30px] py-[30px] rounded-[23px]">
                 <i className="fa-solid fa-envelope bg-blue-300 w-[60px] h-[60px] inline-block text-center leading-[60px] rounded-full text-teal-color text-[20px] mb-5"></i>
                 <h4 className="text-[21px] font-bold mb-[10px] text-[#2a2a2a] capitalize">
-                  {t('contact us via email')}
+                  {t("contact us via email")}
                 </h4>
-                <a
-                  href="#"
-                  className="text-[15px] text-teal-color no-underline"
-                >
+                <span className="text-[15px] text-teal-color">
                   company@email.com
-                </a>
+                </span>
               </div>
             </div>
             <div className="w-full max-w-full mb-[30px]  rounded-[23px] small:w-1/2 px-[15px] xLarge:w-[33.33%] ">
               <div className=" bg-[#f0f0f0]  text-center px-[30px] py-[30px] rounded-[23px]">
                 <i className="fa-solid fa-location-pin bg-blue-300 w-[60px] h-[60px] inline-block text-center leading-[60px] rounded-full text-teal-color text-[20px] mb-5"></i>
                 <h4 className="text-[21px] font-bold mb-[10px] text-[#2a2a2a] capitalize">
-                 {t('visit our offices')}
+                  {t("visit our offices")}
                 </h4>
-                <a
-                  href="#"
-                  className="text-[15px] text-teal-color no-underline"
-                >
-                 {t('24th Street North Avenue London, UK')}
-                </a>
+                <span className="text-[15px] text-teal-color no-underline">
+                  {t("24th Street North Avenue London, UK")}
+                </span>
               </div>
             </div>
           </div>

@@ -2,6 +2,8 @@ import React, { useState, useRef, useEffect } from "react";
 import { sliderData } from "./slider-data";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
+
+//style
 import "../../index.css";
 
 const delay = 6000;

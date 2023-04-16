@@ -1,6 +1,9 @@
 import React from "react";
-import discoverMore from "../../assets/discoverMoreImage/about-left-image.jpg";
 import { useTranslation } from "react-i18next";
+
+//image
+import discoverMore from "../../assets/discoverMoreImage/about-left-image.jpg";
+//style
 import "../../index.css";
 
 const DiscoverMoreAbout = () => {

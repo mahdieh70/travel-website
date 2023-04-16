@@ -1,7 +1,9 @@
 import React, { useState } from "react";
 import { bestOfferCity } from "../bestOfferData";
-import BestWeeklyOffer from "../bestWeeklyOffer";
 import { useTranslation } from "react-i18next";
+
+//component
+import BestWeeklyOffer from "../bestWeeklyOffer";
 
 const DealBanner = () => {
   const [countryName, setCountryName] = useState("");

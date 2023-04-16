@@ -1,6 +1,8 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
 import { Link, useNavigate } from "react-router-dom";
+
+//style
 import "../../../index.css";
 
 const BestWeeklyOffer = ({ bestOfferCity, countryName, priceOffer }) => {

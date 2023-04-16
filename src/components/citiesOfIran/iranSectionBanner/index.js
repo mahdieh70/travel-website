@@ -1,5 +1,7 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
+
+//style
 import "../../../index.css";
 
 const IranSectionBanner = () => {
