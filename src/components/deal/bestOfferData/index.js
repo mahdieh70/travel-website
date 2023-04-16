@@ -52,8 +52,8 @@ export const bestOfferCity = [
     image:
       "https://i.postimg.cc/CKR1Yyp5/21-1-rome-italy-Baths-of-Caracalla.jpg",
     country: "italy",
-    location: "rome",
-    city: "Baths-of-Caracalla",
+    location: "Baths-of-Caracalla",
+    city: "rome",
     price: "250",
   },
   {
